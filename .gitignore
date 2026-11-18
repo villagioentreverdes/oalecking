@@ -1,0 +1,7 @@
+CLAUDE.md
+CLAUDE.local.md
+.claude/
+node_modules/
+*.zip
+.DS_Store
+Thumbs.db
