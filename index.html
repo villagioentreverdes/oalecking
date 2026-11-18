@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Álec Alves | Gestor de Tráfego Pago (Meta Ads e Google Ads)</title>
-<meta name="description" content="Gestor de tráfego pago em Monte Mor/Campinas. Campanhas de Meta Ads e Google Ads, landing pages e vídeo de anúncio, do roteiro ao contrato assinado. No digital desde 2014.">
+<title>Álec Alves | Gestor de Tráfego Pago, Sites e Vídeo</title>
+<meta name="description" content="Gestor de tráfego pago (Meta Ads e Google Ads), criador de sites, landing pages e vídeos para anúncio. Veja projetos, serviços e currículo de Álec Alves.">
 <meta name="author" content="Álec Alves">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#08090a">
@@ -14,263 +14,380 @@
 <meta property="og:type" content="profile">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Álec Alves">
-<meta property="og:title" content="Álec Alves | Gestor de Tráfego Pago">
-<meta property="og:description" content="Eu faço a campanha, a página e o vídeo do anúncio. Meta Ads, Google Ads, landing pages e vídeo, do roteiro ao contrato assinado.">
+<meta property="og:title" content="Álec Alves | Quem não aparece, não vende.">
+<meta property="og:description" content="Tráfego pago, sites e vídeo. Projetos, serviços e currículo de Álec Alves.">
 <meta property="og:url" content="https://oalecking.netlify.app/">
 <meta property="og:image" content="https://oalecking.netlify.app/assets/img/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Álec Alves, gestor de tráfego pago, sites e vídeo">
+<meta property="og:image:alt" content="Álec Alves: quem não aparece, não vende.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Álec Alves | Gestor de Tráfego Pago">
-<meta name="twitter:description" content="Eu faço a campanha, a página e o vídeo do anúncio.">
+<meta name="twitter:title" content="Álec Alves | Quem não aparece, não vende.">
+<meta name="twitter:description" content="Tráfego pago, sites e vídeo. Projetos, serviços e currículo.">
 <meta name="twitter:image" content="https://oalecking.netlify.app/assets/img/og-image.jpg">
 
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preload" href="/assets/fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/assets/fonts/instrument-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/fraunces-italic.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/img/alec-alves-retrato.webp" as="image" type="image/webp" fetchpriority="high">
 
 <script>document.documentElement.classList.add('js')</script>
 <style>
 @font-face{font-family:"Bricolage";src:url(/assets/fonts/bricolage.woff2) format("woff2");font-weight:200 800;font-display:swap}
-@font-face{font-family:"Instrument";src:url(/assets/fonts/instrument-italic.woff2) format("woff2");font-style:italic;font-weight:400;font-display:swap}
-@font-face{font-family:"Instrument";src:url(/assets/fonts/instrument.woff2) format("woff2");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:"Fraunces";src:url(/assets/fonts/fraunces-italic.woff2) format("woff2");font-style:italic;font-weight:500 700;font-display:swap}
 @font-face{font-family:"JBMono";src:url(/assets/fonts/jbmono-400.woff2) format("woff2");font-weight:400;font-display:swap}
 @font-face{font-family:"JBMono";src:url(/assets/fonts/jbmono-500.woff2) format("woff2");font-weight:500;font-display:swap}
 
 :root{
-  --bg:#08090a; --bg-2:#0d0f10; --surface:#111314; --surface-2:#171a1b;
-  --line:rgba(255,255,255,.09); --line-2:rgba(255,255,255,.16);
-  --text:#f3f1ea; --muted:#a2a39b; --dim:#6f7069;
-  --acid:#8cf905; --acid-ink:#0a1200; --warm:#ffd98a;
-  --f-display:"Bricolage",system-ui,sans-serif; --f-serif:"Instrument",Georgia,serif; --f-mono:"JBMono",ui-monospace,monospace;
-  --max:1240px; --pad:clamp(20px,4vw,48px); --r:18px;
-  --ease:cubic-bezier(.2,.7,.1,1);
+  --bg:#08090a;--bg-2:#0c0e0f;--surface:#111314;--surface-2:#171a1b;
+  --line:rgba(255,255,255,.09);--line-2:rgba(255,255,255,.16);
+  --text:#f3f1ea;--muted:#a2a39b;--dim:#6f7069;
+  --acid:#8cf905;--acid-2:#b8ff45;--ink:#0a1200;
+  --f-display:"Bricolage",system-ui,sans-serif;--f-serif:"Fraunces",Georgia,serif;--f-mono:"JBMono",ui-monospace,monospace;
+  --max:1240px;--pad:clamp(20px,4vw,48px);--r:20px;
+  --ease:cubic-bezier(.2,.7,.1,1);--ease-io:cubic-bezier(.7,0,.2,1);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
 body{background:var(--bg);color:var(--text);font-family:var(--f-display);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
-  background:radial-gradient(1100px 600px at 78% -8%,rgba(255,217,138,.07),transparent 60%),radial-gradient(900px 500px at 8% 12%,rgba(140,249,5,.05),transparent 60%)}
-img{display:block;max-width:100%;height:auto}
+body.lock{overflow:hidden}
+img,video{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
-ul{list-style:none}
-em{font-family:var(--f-serif);font-style:italic;font-weight:400;letter-spacing:0}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+ul,ol{list-style:none}
+em{font-family:var(--f-serif);font-style:italic;font-weight:600;letter-spacing:-.015em;color:var(--acid)}
 :focus-visible{outline:2px solid var(--acid);outline-offset:3px;border-radius:6px}
-.skip{position:absolute;left:12px;top:-60px;background:var(--acid);color:var(--acid-ink);padding:10px 16px;border-radius:8px;font-weight:600;z-index:2000;transition:top .2s}
+::selection{background:var(--acid);color:var(--ink)}
+.skip{position:absolute;left:12px;top:-60px;background:var(--acid);color:var(--ink);padding:10px 16px;border-radius:8px;font-weight:600;z-index:3000;transition:top .2s}
 .skip:focus{top:12px}
 .wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
-.mono{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.mono{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
 .mono b{color:var(--acid);font-weight:500}
-.sec{padding:clamp(80px,11vw,150px) 0}
-.sec-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px 40px;margin-bottom:clamp(36px,5vw,64px)}
-.sec-head h2{font-size:clamp(2.1rem,5vw,4rem);font-weight:600;line-height:1.02;letter-spacing:-.035em;max-width:16ch;text-wrap:balance}
-.sec-head h2 em{color:var(--acid);font-size:1.06em}
-.sec-head p{max-width:42ch;color:var(--muted)}
+.sec{padding:clamp(90px,12vw,160px) 0}
+.sec-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px 48px;margin-bottom:clamp(40px,5vw,72px)}
+.sec-head h2{font-size:clamp(2.2rem,5.2vw,4.3rem);font-weight:600;line-height:1;letter-spacing:-.04em;max-width:15ch;text-wrap:balance}
+.sec-head p{max-width:44ch;color:var(--muted)}
+.kicker{display:block;margin-bottom:18px}
+
+/* logo */
+.logo-svg{display:block;fill:url(#lg)}
 
 /* botões */
-.btn{display:inline-flex;align-items:center;gap:.6em;padding:.95em 1.5em;border-radius:999px;font-weight:600;font-size:.95rem;border:1px solid var(--line-2);transition:transform .25s var(--ease),background .25s,color .25s,border-color .25s;white-space:nowrap}
-.btn svg{width:1.05em;height:1.05em;flex:none;transition:transform .25s var(--ease)}
-.btn:hover svg{transform:translate(2px,-2px)}
-.btn-primary{background:var(--acid);color:var(--acid-ink);border-color:var(--acid)}
-.btn-primary:hover{background:#a4ff2e;transform:translateY(-2px)}
-.btn-ghost:hover{border-color:var(--text);background:rgba(255,255,255,.04)}
-.btn-sm{padding:.65em 1.15em;font-size:.82rem}
+.btn{position:relative;display:inline-flex;align-items:center;gap:.6em;padding:1em 1.55em;border-radius:999px;font-weight:600;font-size:.95rem;border:1px solid var(--line-2);transition:background .3s,color .3s,border-color .3s;white-space:nowrap;will-change:transform}
+.btn svg{width:1.05em;height:1.05em;flex:none;transition:transform .35s var(--ease)}
+.btn:hover svg{transform:translate(3px,-3px)}
+.btn-primary{background:var(--acid);color:var(--ink);border-color:var(--acid)}
+.btn-primary:hover{background:var(--acid-2)}
+.btn-ghost:hover{border-color:var(--text);background:rgba(255,255,255,.05)}
+.btn-sm{padding:.7em 1.2em;font-size:.84rem}
+
+/* cursor */
+.cur,.cur-ring{position:fixed;left:0;top:0;pointer-events:none;z-index:4000;border-radius:50%;opacity:0;transition:opacity .3s}
+.cur{width:8px;height:8px;margin:-4px 0 0 -4px;background:var(--acid)}
+.cur-ring{width:38px;height:38px;margin:-19px 0 0 -19px;border:1.5px solid rgba(140,249,5,.7);display:grid;place-items:center;transition:opacity .3s,width .35s var(--ease),height .35s var(--ease),margin .35s var(--ease),background .35s,border-color .35s}
+.cur-ring span{font:500 .62rem var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink);opacity:0;transition:opacity .2s}
+.has-cursor .cur,.has-cursor .cur-ring{opacity:1}
+.cur-ring.hover{width:58px;height:58px;margin:-29px 0 0 -29px;background:rgba(140,249,5,.12);border-color:var(--acid)}
+.cur-ring.label{width:84px;height:84px;margin:-42px 0 0 -42px;background:var(--acid);border-color:var(--acid)}
+.cur-ring.label span{opacity:1}
+.has-cursor.cur-label .cur{opacity:0}
+@media (hover:hover) and (pointer:fine){.has-cursor,.has-cursor a,.has-cursor button,.has-cursor [data-cursor]{cursor:none}}
+
+/* loader */
+.intro{position:fixed;inset:0;z-index:5000;background:var(--bg);display:grid;place-items:center;transition:opacity .6s var(--ease),visibility .6s}
+.intro svg{width:min(42vw,220px);height:auto;overflow:visible}
+.intro use{fill:url(#lg);fill-opacity:0;stroke:var(--acid);stroke-width:3;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.15s var(--ease-io) forwards,fillin .5s .95s ease forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes fillin{to{fill-opacity:1;stroke-opacity:0}}
+.intro.done{opacity:0;visibility:hidden}
+.no-intro .intro{display:none}
+
+/* progresso de leitura */
+.progress{position:fixed;left:0;top:0;height:2px;width:100%;background:var(--acid);transform-origin:0 50%;transform:scaleX(0);z-index:1200}
 
 /* header */
-header.top{position:fixed;inset:0 0 auto 0;z-index:1000;transition:background .3s,border-color .3s,backdrop-filter .3s;border-bottom:1px solid transparent}
+header.top{position:fixed;inset:0 0 auto 0;z-index:1000;transition:background .35s,border-color .35s,transform .45s var(--ease);border-bottom:1px solid transparent}
 header.top.stuck{background:rgba(8,9,10,.78);backdrop-filter:blur(14px) saturate(1.3);-webkit-backdrop-filter:blur(14px) saturate(1.3);border-color:var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
-.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:-.03em;font-size:1.15rem}
-.brand i{width:9px;height:9px;border-radius:50%;background:var(--acid);box-shadow:0 0 14px var(--acid)}
+header.top.hide{transform:translateY(-100%)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:-.03em;font-size:1.12rem}
+.brand svg{width:40px;height:auto;transition:transform .5s var(--ease)}
+.brand:hover svg{transform:rotate(-6deg) scale(1.06)}
 .menu{display:flex;align-items:center;gap:clamp(18px,2.4vw,34px)}
-.menu a:not(.btn){font-size:.9rem;color:var(--muted);transition:color .2s;position:relative}
+.menu a:not(.btn){font-size:.9rem;color:var(--muted);transition:color .25s;position:relative;padding:4px 0}
+.menu a:not(.btn)::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:1px;background:var(--acid);transform:scaleX(0);transform-origin:right;transition:transform .4s var(--ease)}
 .menu a:not(.btn):hover{color:var(--text)}
-.burger{display:none;width:44px;height:44px;border-radius:50%;border:1px solid var(--line-2);background:transparent;color:var(--text);cursor:pointer;align-items:center;justify-content:center}
+.menu a:not(.btn):hover::after,.menu a.on::after{transform:scaleX(1);transform-origin:left}
+.menu a.on{color:var(--text)}
+.burger{display:none;width:44px;height:44px;border-radius:50%;border:1px solid var(--line-2);align-items:center;justify-content:center}
 .burger span,.burger span::before{display:block;width:16px;height:1.5px;background:currentColor;position:relative;transition:transform .3s var(--ease)}
 .burger span::before{content:"";position:absolute;top:5px}
 .burger[aria-expanded=true] span{transform:translateY(2.5px) rotate(45deg)}
-.burger[aria-expanded=true] span::before{transform:translateY(-5px) rotate(-90deg);top:5px}
+.burger[aria-expanded=true] span::before{transform:translateY(-5px) rotate(-90deg)}
 
 /* hero */
-.hero{position:relative;padding:clamp(120px,14vw,168px) 0 clamp(60px,8vw,100px);overflow:hidden}
-.hero-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:clamp(32px,5vw,80px);align-items:center}
-.eyebrow{display:inline-flex;align-items:center;gap:10px;padding:8px 14px 8px 12px;border:1px solid var(--line-2);border-radius:999px;background:rgba(255,255,255,.03);margin-bottom:28px}
-.eyebrow i{width:7px;height:7px;border-radius:50%;background:var(--acid);animation:pulse 2s infinite}
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;padding:120px 0 70px;overflow:hidden;isolation:isolate}
+.spot{position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:radial-gradient(520px 420px at var(--sx,72%) var(--sy,30%),rgba(255,236,190,.10),transparent 70%),radial-gradient(900px 560px at 10% 0%,rgba(140,249,5,.06),transparent 60%)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(32px,5vw,80px);align-items:center;width:100%}
+.pill{display:inline-flex;align-items:center;gap:10px;padding:8px 15px 8px 12px;border:1px solid var(--line-2);border-radius:999px;background:rgba(255,255,255,.03);margin-bottom:30px}
+.pill i{width:7px;height:7px;border-radius:50%;background:var(--acid);animation:pulse 2.2s infinite}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(140,249,5,.55)}70%,100%{box-shadow:0 0 0 9px rgba(140,249,5,0)}}
-h1{font-size:clamp(2.55rem,5.9vw,5.1rem);font-weight:600;line-height:.98;letter-spacing:-.045em;text-wrap:balance}
-h1 em{color:var(--acid);font-size:1.07em;letter-spacing:-.02em}
-.lead{margin-top:28px;max-width:52ch;font-size:clamp(1.05rem,1.5vw,1.25rem);color:var(--muted);line-height:1.55}
+h1{font-size:clamp(3rem,8.2vw,7.4rem);font-weight:600;line-height:.92;letter-spacing:-.055em}
+h1 .ln{display:block;overflow:hidden;padding-bottom:.08em;margin-bottom:-.08em}
+h1 .w{display:inline-block}
+h1 em{font-size:1.04em;letter-spacing:-.025em;position:relative;padding-right:.04em}
+h1 em::after{content:"";position:absolute;left:.02em;right:.1em;bottom:.02em;height:.055em;border-radius:9px;background:var(--acid);transform:scaleX(0);transform-origin:left;transition:transform 1s 1.5s var(--ease)}
+.ready h1 em::after{transform:scaleX(1)}
+.lead{margin-top:30px;max-width:50ch;font-size:clamp(1.05rem,1.45vw,1.22rem);color:var(--muted);line-height:1.6}
 .lead strong{color:var(--text);font-weight:500}
-.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:38px}
-.hero-links{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:26px}
-.hero-links a{font-size:.9rem;color:var(--muted);border-bottom:1px solid var(--line-2);padding-bottom:2px;transition:color .2s,border-color .2s}
-.hero-links a:hover{color:var(--acid);border-color:var(--acid)}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.links{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:28px}
+.links a{font-size:.9rem;color:var(--muted);border-bottom:1px solid var(--line-2);padding-bottom:2px;transition:color .25s,border-color .25s}
+.links a:hover{color:var(--acid);border-color:var(--acid)}
 
-.stage{position:relative;justify-self:end;width:min(100%,420px)}
-.stage::before{content:"";position:absolute;left:50%;top:-30%;width:150%;height:120%;transform:translateX(-50%);pointer-events:none;
-  background:conic-gradient(from 180deg at 50% 0%,transparent 160deg,rgba(255,236,190,.16) 180deg,transparent 200deg);filter:blur(6px);
-  -webkit-mask:linear-gradient(#000,transparent 85%);mask:linear-gradient(#000,transparent 85%)}
-.arch{position:relative;border-radius:999px 999px 22px 22px;overflow:hidden;aspect-ratio:4/5.35;background:var(--surface);border:1px solid var(--line-2);
-  box-shadow:0 40px 90px -30px rgba(0,0,0,.9),0 0 0 8px rgba(255,255,255,.015),inset 0 -80px 80px -60px rgba(140,249,5,.18)}
-.arch img{width:100%;height:100%;object-fit:cover;object-position:50% 14%;filter:contrast(1.04) saturate(.95)}
-.chip{position:absolute;display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:14px;background:rgba(13,15,16,.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--line-2);box-shadow:0 14px 40px -10px rgba(0,0,0,.7)}
-.chip b{font-family:var(--f-mono);font-weight:500;color:var(--acid);font-size:1.02rem;letter-spacing:-.01em}
-.chip span{font-size:.72rem;line-height:1.25;color:var(--muted);max-width:11ch}
-.chip.c1{left:-13%;top:9%}
-.chip.c2{right:-6%;bottom:14%}
+.stage{position:relative;justify-self:end;width:min(100%,410px)}
+.arch{position:relative;border-radius:999px 999px 24px 24px;overflow:hidden;aspect-ratio:4/5.3;background:var(--surface);border:1px solid var(--line-2);
+  box-shadow:0 50px 100px -30px rgba(0,0,0,.95),0 0 0 9px rgba(255,255,255,.015)}
+.arch img{width:100%;height:100%;object-fit:cover;object-position:50% 14%;transform:scale(1.06);transition:transform 1.4s var(--ease)}
+.ready .arch img{transform:scale(1)}
+.arch::after{content:"";position:absolute;inset:0;background:radial-gradient(240px 200px at var(--ax,50%) var(--ay,20%),rgba(255,236,190,.16),transparent 70%),linear-gradient(transparent 60%,rgba(8,9,10,.55));pointer-events:none;mix-blend-mode:screen}
+.chip{position:absolute;display:flex;align-items:center;gap:12px;padding:11px 15px;border-radius:15px;background:rgba(13,15,16,.84);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--line-2);box-shadow:0 14px 40px -10px rgba(0,0,0,.7)}
+.chip b{font:500 1.02rem var(--f-mono);color:var(--acid)}
+.chip span{font-size:.74rem;line-height:1.28;color:var(--muted);max-width:14ch}
+.chip.c1{left:-14%;top:12%}
+.chip.c2{right:-8%;bottom:13%}
 .float{animation:float 7s ease-in-out infinite}
-.chip.c2.float{animation-delay:-3.5s}
-@keyframes float{50%{transform:translateY(-8px)}}
+.c2.float{animation-delay:-3.5s}
+@keyframes float{50%{transform:translateY(-9px)}}
+.scroll-cue{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:10px}
+.scroll-cue i{width:1px;height:46px;background:linear-gradient(var(--acid),transparent);animation:cue 2.2s var(--ease) infinite;transform-origin:top}
+@keyframes cue{0%{transform:scaleY(0)}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
 
-/* marquee */
+/* ticker */
 .ticker{border-block:1px solid var(--line);background:var(--bg-2);overflow:hidden;padding:18px 0}
-.ticker-track{display:flex;width:max-content;animation:roll 42s linear infinite}
+.ticker-track{display:flex;width:max-content;animation:roll 46s linear infinite}
 .ticker:hover .ticker-track{animation-play-state:paused}
 .ticker-track span{font-family:var(--f-mono);font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding:0 26px;display:flex;align-items:center;gap:52px;white-space:nowrap}
-.ticker-track span::after{content:"";width:5px;height:5px;border-radius:50%;background:var(--acid);opacity:.8}
+.ticker-track span::after{content:"";width:5px;height:5px;border-radius:50%;background:var(--acid);opacity:.85}
 @keyframes roll{to{transform:translateX(-50%)}}
 
 /* números */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--line);gap:1px}
-.stat{background:var(--surface);padding:clamp(24px,3vw,40px) clamp(20px,2.4vw,34px);display:flex;flex-direction:column;gap:14px;transition:background .3s}
-.stat:hover{background:var(--surface-2)}
-.stat .n{white-space:nowrap;font-size:clamp(2rem,3.7vw,3.3rem);font-weight:600;letter-spacing:-.05em;line-height:1;color:var(--text);font-variant-numeric:tabular-nums}
-.stat .n sup,.stat .n small{font-size:.42em;letter-spacing:-.01em;color:var(--acid);font-weight:500;vertical-align:baseline;margin-left:.1em}
-.stat p{color:var(--muted);font-size:.93rem;line-height:1.45;max-width:26ch}
-.note{margin-top:18px}
+.stat{background:var(--surface);padding:clamp(26px,3vw,40px) clamp(20px,2.4vw,32px);display:flex;flex-direction:column;gap:16px;position:relative;overflow:hidden}
+.stat::before{content:"";position:absolute;left:0;top:0;height:2px;width:100%;background:var(--acid);transform:scaleX(0);transform-origin:left;transition:transform 1.1s var(--ease) var(--d,0s)}
+.stat.in::before{transform:scaleX(1)}
+.stat .n{white-space:nowrap;font-size:clamp(2.1rem,3.8vw,3.4rem);font-weight:600;letter-spacing:-.05em;line-height:1;font-variant-numeric:tabular-nums}
+.stat .n small{font-size:.42em;letter-spacing:-.01em;color:var(--acid);font-weight:500;margin-left:.1em}
+.stat p{color:var(--muted);font-size:.94rem;line-height:1.45;max-width:27ch}
 
-/* ciclo */
+/* serviços */
 .rows{border-top:1px solid var(--line)}
-.row{display:grid;grid-template-columns:90px minmax(0,1fr) minmax(0,1.1fr) auto;gap:clamp(16px,3vw,48px);align-items:start;padding:clamp(28px,3.6vw,48px) 0;border-bottom:1px solid var(--line);position:relative;transition:padding .35s var(--ease)}
-.row::before{content:"";position:absolute;inset:0 -20px;background:linear-gradient(90deg,rgba(140,249,5,.06),transparent 70%);opacity:0;transition:opacity .35s;pointer-events:none;border-radius:10px}
+.row{display:grid;grid-template-columns:72px minmax(0,1fr) minmax(0,1.15fr);gap:clamp(16px,3vw,52px);align-items:start;padding:clamp(30px,3.6vw,50px) 0;border-bottom:1px solid var(--line);position:relative}
+.row::before{content:"";position:absolute;inset:0 calc(var(--pad) * -1);background:linear-gradient(90deg,rgba(140,249,5,.07),transparent 70%);opacity:0;transition:opacity .45s;pointer-events:none}
 .row:hover::before{opacity:1}
-.row .idx{font-family:var(--f-mono);font-size:.82rem;color:var(--acid);padding-top:.7em}
-.row h3{font-size:clamp(1.8rem,3.4vw,2.9rem);font-weight:600;letter-spacing:-.04em;line-height:1.02}
-.row h3 em{color:var(--acid)}
-.row p{color:var(--muted);max-width:50ch}
+.row .idx{font-family:var(--f-mono);font-size:.82rem;color:var(--acid);padding-top:.9em}
+.row h3{font-size:clamp(1.9rem,3.6vw,3rem);font-weight:600;letter-spacing:-.045em;line-height:1.02;transition:transform .5s var(--ease)}
+.row:hover h3{transform:translateX(10px)}
+.row p{color:var(--muted);max-width:52ch}
 .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
-.tag{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;padding:6px 11px;border:1px solid var(--line-2);border-radius:999px;color:var(--muted)}
+.tag{font-family:var(--f-mono);font-size:.68rem;letter-spacing:.07em;text-transform:uppercase;padding:6px 11px;border:1px solid var(--line-2);border-radius:999px;color:var(--muted)}
+.row .ask{display:inline-flex;align-items:center;gap:.5em;margin-top:22px;font-weight:600;font-size:.92rem;color:var(--text);border-bottom:1px solid var(--acid);padding-bottom:3px;transition:color .25s,gap .35s var(--ease)}
+.row .ask:hover{color:var(--acid);gap:.8em}
+.row .ask svg{width:1em;height:1em}
 
-/* trabalho */
-.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.case{position:relative;display:flex;flex-direction:column;gap:18px;padding:clamp(24px,2.6vw,34px);border:1px solid var(--line);border-radius:var(--r);background:linear-gradient(180deg,var(--surface),var(--bg-2));overflow:hidden;transition:border-color .3s,transform .4s var(--ease)}
-.case:hover{border-color:rgba(140,249,5,.45);transform:translateY(-4px)}
-.case::after{content:"";position:absolute;right:-60px;top:-60px;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,rgba(140,249,5,.14),transparent 65%);opacity:0;transition:opacity .4s}
-.case:hover::after{opacity:1}
-.case .meta{display:flex;justify-content:space-between;gap:12px}
-.case h3{font-size:clamp(1.4rem,2.2vw,1.85rem);font-weight:600;letter-spacing:-.035em;line-height:1.1}
-.case p{color:var(--muted);font-size:.97rem;line-height:1.55}
-.case ul{display:grid;gap:8px;margin-top:auto;padding-top:6px}
-.case li{font-size:.9rem;color:var(--text);padding-left:20px;position:relative;line-height:1.4}
-.case li::before{content:"";position:absolute;left:0;top:.62em;width:10px;height:1px;background:var(--acid)}
-.more-title{margin:clamp(40px,5vw,64px) 0 20px}
-.logos{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
-.logo-card{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--surface);transition:border-color .3s,transform .4s var(--ease)}
-.logo-card:hover{border-color:var(--line-2);transform:translateY(-3px)}
-.logo-card img{width:100%;aspect-ratio:1;object-fit:cover}
-.logo-card div{padding:16px 18px 20px;display:grid;gap:6px}
-.logo-card strong{font-size:1rem;font-weight:600;letter-spacing:-.02em}
-.logo-card span{font-size:.84rem;color:var(--muted);line-height:1.4}
+/* projetos */
+.bento{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.case{grid-column:span 6;position:relative;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);overflow:hidden;text-align:left;transition:border-color .4s,transform .6s var(--ease)}
+.case.wide{grid-column:span 7}.case.narrow{grid-column:span 5}
+.case:hover{border-color:rgba(140,249,5,.45)}
+.case .media{display:block;position:relative;overflow:hidden;aspect-ratio:16/10;background:#000}
+.case .media img{width:100%;height:100%;object-fit:cover;transform:scale(1.02);transition:transform 1.1s var(--ease),filter .6s}
+.case:hover .media img{transform:scale(1.07)}
+.case .media::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(8,9,10,.6))}
+.case .open{position:absolute;right:16px;top:16px;z-index:2;width:44px;height:44px;border-radius:50%;background:rgba(8,9,10,.7);backdrop-filter:blur(8px);border:1px solid var(--line-2);display:grid;place-items:center;transition:background .3s,transform .5s var(--ease)}
+.case .open svg{width:16px;height:16px}
+.case:hover .open{background:var(--acid);color:var(--ink);transform:rotate(45deg)}
+.case .body{display:flex;padding:clamp(22px,2.4vw,30px);display:flex;flex-direction:column;gap:10px;flex:1}
+.case .meta{display:flex;width:100%;justify-content:space-between;gap:12px}
+.case .ttl{display:block;font-size:clamp(1.35rem,2.1vw,1.8rem);font-weight:600;letter-spacing:-.035em;line-height:1.12;max-width:26ch}
+.case p{color:var(--muted);font-size:.96rem}
+.minis-title{margin:clamp(48px,6vw,80px) 0 20px;display:flex;justify-content:space-between;align-items:baseline;gap:20px}
+.minis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.mini{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:#000;aspect-ratio:9/14;text-align:left;transition:border-color .4s}
+.mini:hover{border-color:rgba(140,249,5,.45)}
+.mini img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.82;transition:transform 1.1s var(--ease),opacity .5s}
+.mini:hover img{transform:scale(1.06);opacity:1}
+.mini::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 40%,rgba(8,9,10,.92))}
+.mini .play{position:absolute;left:50%;top:44%;z-index:2;width:58px;height:58px;margin:-29px 0 0 -29px;border-radius:50%;background:rgba(8,9,10,.55);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.3);display:grid;place-items:center;transition:background .3s,transform .5s var(--ease)}
+.mini .play svg{width:18px;height:18px;margin-left:3px}
+.mini:hover .play{background:var(--acid);color:var(--ink);transform:scale(1.08)}
+.mini .cap{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:18px}
+.mini strong{display:block;font-size:1.08rem;letter-spacing:-.02em;line-height:1.2}
+.mini span{display:block;margin-top:4px;font-size:.84rem;color:#c6c7bf;line-height:1.35}
+
+/* modal */
+.modal{position:fixed;inset:0;z-index:2000;background:var(--bg);overflow-y:auto;overscroll-behavior:contain;visibility:hidden;clip-path:inset(50% 50% 50% 50% round 24px)}
+.modal.open{visibility:visible}
+.modal.anim{transition:clip-path .75s var(--ease-io)}
+.m-bar{position:sticky;top:0;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px var(--pad);background:rgba(8,9,10,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.m-nav{display:flex;gap:8px}
+.m-btn{width:46px;height:46px;border-radius:50%;border:1px solid var(--line-2);display:grid;place-items:center;transition:background .3s,color .3s,border-color .3s}
+.m-btn:hover{background:var(--acid);color:var(--ink);border-color:var(--acid)}
+.m-btn svg{width:18px;height:18px}
+.m-in{max-width:1180px;margin:0 auto;padding:clamp(34px,5vw,64px) var(--pad) 90px}
+.m-in > *{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.modal.shown .m-in > *{opacity:1;transform:none}
+.modal.shown .m-in > *:nth-child(2){transition-delay:.06s}.modal.shown .m-in > *:nth-child(3){transition-delay:.12s}.modal.shown .m-in > *:nth-child(4){transition-delay:.18s}.modal.shown .m-in > *:nth-child(5){transition-delay:.24s}
+.m-head h2{font-size:clamp(2.3rem,6vw,5rem);font-weight:600;letter-spacing:-.05em;line-height:.98;max-width:18ch;margin:16px 0 18px;text-wrap:balance}
+.m-head .lede{font-size:clamp(1.05rem,1.6vw,1.3rem);color:var(--muted);max-width:56ch}
+.m-facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.gallery{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;margin:clamp(34px,4vw,54px) calc(var(--pad) * -1) 0;padding:0 var(--pad) 14px;scrollbar-width:thin;scrollbar-color:var(--acid) transparent}
+.gallery figure{flex:0 0 auto;scroll-snap-align:center;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:var(--surface);height:clamp(300px,58vh,600px)}
+.gallery figure img,.gallery figure video{height:100%;width:auto;max-width:none;object-fit:cover;background:#000}
+.gallery figure.wide{width:min(88vw,1060px)}
+.gallery figure.wide img{width:100%;height:100%}
+.g-hint{margin-top:10px}
+.vid{position:relative;height:100%}
+.vid .vplay{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(transparent,rgba(0,0,0,.35));transition:opacity .4s}
+.vid .vplay span{width:76px;height:76px;border-radius:50%;background:var(--acid);color:var(--ink);display:grid;place-items:center;box-shadow:0 10px 40px -6px rgba(140,249,5,.55);transition:transform .4s var(--ease)}
+.vid .vplay:hover span{transform:scale(1.08)}
+.vid .vplay svg{width:24px;height:24px;margin-left:4px}
+.vid.playing .vplay{opacity:0;pointer-events:none}
+.m-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:clamp(36px,4vw,56px)}
+.m-col{border:1px solid var(--line);border-radius:var(--r);padding:clamp(22px,2.4vw,32px);background:var(--surface)}
+.m-col h3{font-family:var(--f-mono);font-size:.74rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--acid);margin-bottom:14px}
+.m-col p{color:#cfd0c8;font-size:1rem;line-height:1.6}
+.m-col ul{display:grid;gap:10px}
+.m-col li{position:relative;padding-left:20px;color:#cfd0c8;font-size:.98rem;line-height:1.45}
+.m-col li::before{content:"";position:absolute;left:0;top:.66em;width:10px;height:1px;background:var(--acid)}
+.solo-wrap{display:grid;grid-template-columns:minmax(0,380px) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:start;margin-top:clamp(34px,4vw,54px)}
+.solo-wrap .gallery{margin:0;padding:0;overflow:visible}
+.solo-wrap .gallery figure{height:auto;width:100%}
+.solo-wrap .gallery figure img,.solo-wrap .gallery figure video{width:100%;height:auto;max-height:78vh}
+.solo-wrap .m-cols{grid-template-columns:1fr;margin-top:0}
+.m-foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px;margin-top:clamp(40px,5vw,64px);padding-top:30px;border-top:1px solid var(--line)}
+.m-next{display:flex;flex-direction:column;align-items:flex-end;gap:4px;text-align:right}
+.m-next strong{font-size:clamp(1.2rem,2vw,1.6rem);letter-spacing:-.03em;transition:color .25s}
+.m-next:hover strong{color:var(--acid)}
 
 /* trajetória */
-.tl{position:relative;display:grid;gap:0;max-width:880px;margin-left:auto}
-.tl::before{content:"";position:absolute;left:150px;top:6px;bottom:6px;width:1px;background:linear-gradient(var(--acid),var(--line-2) 18%,var(--line) 100%)}
-.tl li{display:grid;grid-template-columns:150px 1fr;gap:0 44px;padding:0 0 clamp(26px,3vw,40px);position:relative}
-.tl li::before{content:"";position:absolute;left:146px;top:9px;width:9px;height:9px;border-radius:50%;background:var(--bg);border:1.5px solid var(--dim)}
-.tl li:first-child::before{background:var(--acid);border-color:var(--acid);box-shadow:0 0 14px var(--acid)}
-.tl time{font-family:var(--f-mono);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding-top:4px;text-align:right;padding-right:26px}
-.tl h3{font-size:1.2rem;font-weight:600;letter-spacing:-.02em;line-height:1.25}
-.tl p{color:var(--muted);font-size:.96rem;margin-top:4px}
+.tl-wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,6vw,90px);align-items:start}
+.tl-side{position:sticky;top:120px}
+.tl-side h2{font-size:clamp(2.2rem,5vw,4.1rem);font-weight:600;letter-spacing:-.045em;line-height:1;text-wrap:balance}
+.tl-side p{color:var(--muted);margin-top:22px;max-width:36ch}
+.tl{position:relative;padding-left:44px}
+.tl-rail{position:absolute;left:7px;top:8px;bottom:8px;width:1px;background:var(--line-2)}
+.tl-fill{position:absolute;left:0;top:0;width:100%;height:0;background:var(--acid);box-shadow:0 0 12px var(--acid)}
+.tl-dot{position:absolute;left:-6px;bottom:-6px;width:13px;height:13px;border-radius:50%;background:var(--acid);box-shadow:0 0 0 5px rgba(140,249,5,.18),0 0 22px var(--acid);}
+.tl li{position:relative;padding-bottom:clamp(30px,3.6vw,46px)}
+.tl li::before{content:"";position:absolute;left:-41px;top:7px;width:9px;height:9px;border-radius:50%;background:var(--bg);border:1.5px solid var(--dim);transition:border-color .4s,background .4s}
+.tl li.lit::before{border-color:var(--acid);background:var(--acid)}
+.tl time{font-family:var(--f-mono);font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);transition:color .4s}
+.tl li.lit time{color:var(--acid)}
+.tl h3{font-size:clamp(1.15rem,1.7vw,1.4rem);font-weight:600;letter-spacing:-.025em;line-height:1.25;margin-top:6px}
+.tl p{color:var(--muted);font-size:.97rem;margin-top:6px;max-width:54ch}
 
 /* sobre */
 .about{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,6vw,96px);align-items:center}
 .about figure{position:relative}
-.about figure img{border-radius:var(--r);border:1px solid var(--line-2);width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 18%}
-.about figure::after{content:"";position:absolute;inset:auto -14px -14px auto;width:60%;height:60%;border:1px solid rgba(140,249,5,.4);border-radius:var(--r);z-index:-1}
-.about h2{font-size:clamp(2.1rem,4.6vw,3.7rem);font-weight:600;letter-spacing:-.04em;line-height:1.02;margin-bottom:28px;text-wrap:balance}
-.about h2 em{color:var(--acid)}
+.about figure .ph{border-radius:var(--r);overflow:hidden;border:1px solid var(--line-2)}
+.about figure img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 18%;transform:scale(1.12);will-change:transform}
+.about figure::after{content:"";position:absolute;inset:auto -16px -16px auto;width:62%;height:62%;border:1px solid rgba(140,249,5,.4);border-radius:var(--r);z-index:-1}
+.about h2{font-size:clamp(2.2rem,4.8vw,3.9rem);font-weight:600;letter-spacing:-.045em;line-height:1;margin-bottom:28px;text-wrap:balance}
 .about p{color:var(--muted);margin-bottom:18px;max-width:58ch}
 .about p strong{color:var(--text);font-weight:500}
-.quote{margin:30px 0;padding:6px 0 6px 24px;border-left:2px solid var(--acid);font-family:var(--f-serif);font-style:italic;font-size:clamp(1.5rem,2.6vw,2.15rem);line-height:1.2;color:var(--text)}
-.edu{margin-top:30px;display:flex;flex-wrap:wrap;gap:8px}
-
-/* faq */
-.faq{max-width:900px;margin-left:auto;border-top:1px solid var(--line)}
-.faq details{border-bottom:1px solid var(--line)}
-.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:26px 0;font-size:clamp(1.1rem,1.8vw,1.4rem);font-weight:500;letter-spacing:-.02em;transition:color .2s}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary:hover{color:var(--acid)}
-.faq summary::after{content:"+";font-family:var(--f-mono);font-size:1.5rem;color:var(--acid);transition:transform .3s var(--ease);flex:none}
-.faq details[open] summary::after{transform:rotate(45deg)}
-.faq details p{color:var(--muted);padding:0 48px 28px 0;max-width:68ch}
-.faq details p a{color:var(--text);border-bottom:1px solid var(--acid)}
+.quote{margin:32px 0;padding:4px 0 4px 26px;border-left:2px solid var(--acid);font-family:var(--f-serif);font-style:italic;font-weight:600;font-size:clamp(1.55rem,2.8vw,2.3rem);line-height:1.15;letter-spacing:-.02em;color:var(--text)}
+.edu{margin-top:28px;display:flex;flex-wrap:wrap;gap:8px}
 
 /* contato */
-.contact{position:relative;border:1px solid var(--line-2);border-radius:28px;padding:clamp(34px,6vw,84px);overflow:hidden;background:radial-gradient(700px 360px at 85% 0%,rgba(140,249,5,.13),transparent 65%),linear-gradient(180deg,var(--surface),var(--bg-2))}
-.contact h2{font-size:clamp(2.4rem,6.4vw,5.6rem);font-weight:600;letter-spacing:-.05em;line-height:.98;max-width:13ch;text-wrap:balance}
-.contact h2 em{color:var(--acid)}
-.contact .lead{max-width:48ch}
-.channels{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin-top:44px}
-.channel{display:flex;flex-direction:column;gap:6px;padding:18px 20px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.02);transition:border-color .25s,background .25s,transform .3s var(--ease)}
-.channel:hover{border-color:var(--acid);background:rgba(140,249,5,.05);transform:translateY(-3px)}
-.channel strong{font-weight:500;font-size:1.02rem;letter-spacing:-.01em;word-break:break-word}
+.contact-sec{min-height:100svh;display:flex;align-items:center;padding:96px 0 40px}
+.contact{position:relative;width:100%;border:1px solid var(--line-2);border-radius:28px;padding:clamp(28px,4.4vw,60px);overflow:hidden;background:radial-gradient(700px 360px at 88% 0%,rgba(140,249,5,.13),transparent 65%),linear-gradient(180deg,var(--surface),var(--bg-2));display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(28px,4vw,64px);align-items:center}
+.contact .mark{position:absolute;right:-60px;bottom:-70px;width:340px;opacity:.06;pointer-events:none}
+.contact h2{font-size:clamp(2.3rem,5vw,4.2rem);font-weight:600;letter-spacing:-.05em;line-height:.98;text-wrap:balance}
+.contact .sub{color:var(--muted);margin-top:18px;max-width:40ch}
+.switch{position:relative;display:inline-grid;grid-template-columns:1fr 1fr;padding:5px;border:1px solid var(--line-2);border-radius:999px;background:rgba(0,0,0,.25);margin-bottom:22px}
+.switch button{position:relative;z-index:1;padding:.7em 1.3em;border-radius:999px;font-size:.88rem;font-weight:600;color:var(--muted);transition:color .35s}
+.switch button[aria-selected=true]{color:var(--ink)}
+.switch .knob{position:absolute;top:5px;bottom:5px;left:5px;width:calc(50% - 5px);border-radius:999px;background:var(--acid);transition:transform .5s var(--ease)}
+.switch[data-v=vaga] .knob{transform:translateX(100%)}
+.panel{display:none}
+.panel.on{display:block;animation:fade .5s var(--ease)}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}}
+.panel p{color:#cfd0c8;max-width:44ch;margin-bottom:22px}
+.panel .cta-row{margin-top:0}
+.channels{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:26px;padding-top:22px;border-top:1px solid var(--line)}
+.channels a{display:flex;flex-direction:column;gap:2px;transition:color .25s}
+.channels a strong{font-weight:500;font-size:.98rem}
+.channels a:hover strong{color:var(--acid)}
 
-footer{padding:36px 0 54px;border-top:1px solid var(--line)}
-.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px 30px}
+footer{padding:30px 0 46px;border-top:1px solid var(--line)}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:14px 30px}
+.foot .brand svg{width:30px}
+.foot q{font-family:var(--f-serif);font-style:italic;font-weight:600;color:var(--muted);quotes:none}
 
-.wa{position:fixed;right:18px;bottom:18px;z-index:900;width:56px;height:56px;border-radius:50%;background:var(--acid);color:var(--acid-ink);display:grid;place-items:center;box-shadow:0 10px 30px -6px rgba(140,249,5,.5);transition:transform .3s var(--ease)}
+.wa{position:fixed;right:18px;bottom:18px;z-index:900;width:56px;height:56px;border-radius:50%;background:var(--acid);color:var(--ink);display:grid;place-items:center;box-shadow:0 10px 30px -6px rgba(140,249,5,.5);transition:transform .4s var(--ease),opacity .3s}
 .wa:hover{transform:scale(1.08) rotate(-6deg)}
 .wa svg{width:26px;height:26px}
+.wa.off{opacity:0;pointer-events:none;transform:scale(.6)}
 
-/* reveal */
-.js .rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease);transition-delay:var(--d,0s)}
+/* revelações */
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity 1s var(--ease),transform 1s var(--ease);transition-delay:var(--d,0s)}
 .js .rv.in{opacity:1;transform:none}
-.js .hero h1,.js .hero .lead,.js .hero .cta-row,.js .hero .hero-links,.js .hero .eyebrow{animation:rise 1.1s var(--ease) both}
-.js .hero .eyebrow{animation-delay:.05s}.js .hero h1{animation-delay:.15s}.js .hero .lead{animation-delay:.32s}.js .hero .cta-row{animation-delay:.44s}.js .hero .hero-links{animation-delay:.54s}
-.js .stage{animation:rise 1.3s .25s var(--ease) both}
-@keyframes rise{from{opacity:0;transform:translateY(34px);filter:blur(8px)}to{opacity:1;transform:none;filter:none}}
+.js .split .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.1em;margin-bottom:-.1em}
+.js .split .w > span{display:inline-block;transform:translateY(105%);transition:transform 1s var(--ease);transition-delay:calc(var(--i) * .05s)}
+.js .split.in .w > span{transform:none}
+.js .hero h1 .w > span{display:inline-block;transform:translateY(110%);transition:transform 1.15s var(--ease);transition-delay:calc(.25s + var(--i) * .08s)}
+.js .ready .hero h1 .w > span{transform:none}
+.js .hero .h-fade{opacity:0;transform:translateY(18px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.js .ready .hero .h-fade{opacity:1;transform:none}
+.js .ready .hero .h-fade.d1{transition-delay:.1s}.js .ready .hero .h-fade.d2{transition-delay:.75s}.js .ready .hero .h-fade.d3{transition-delay:.9s}.js .ready .hero .h-fade.d4{transition-delay:1.05s}
+.js .stage{opacity:0;transform:translateY(30px) scale(.97);transition:opacity 1.3s var(--ease) .35s,transform 1.3s var(--ease) .35s}
+.js .ready .stage{opacity:1;transform:none}
 
-@media (max-width:980px){
+@media (max-width:1020px){
   .hero-grid{grid-template-columns:1fr}
-  .stage{justify-self:center;width:min(100%,360px);margin-top:20px}
-  .chip.c1{left:-4%;top:7%}.chip.c2{right:-4%}
+  .stage{justify-self:center;width:min(100%,360px);margin-top:12px}
+  .chip.c1{left:-5%}.chip.c2{right:-5%}
   .stats{grid-template-columns:repeat(2,1fr)}
-  .row{grid-template-columns:60px 1fr}
-  .row p,.row .tags{grid-column:2}
-  .row > div:last-child{grid-column:2}
-  .feat{grid-template-columns:1fr}
-  .logos{grid-template-columns:repeat(2,1fr)}
-  .about{grid-template-columns:1fr}
+  .row{grid-template-columns:52px 1fr}
+  .row > div{grid-column:2}
+  .case,.case.wide,.case.narrow{grid-column:span 12}
+  .minis{grid-template-columns:repeat(2,1fr)}
+  .m-cols{grid-template-columns:1fr}
+  .solo-wrap{grid-template-columns:1fr}
+  .solo-wrap .gallery figure{max-width:420px}
+  .tl-wrap,.about,.contact{grid-template-columns:1fr}
+  .tl-side{position:static}
   .about figure{max-width:420px}
-  .tl::before{left:6px}
-  .tl li{grid-template-columns:1fr;padding-left:34px;gap:2px}
-  .tl li::before{left:2px}
-  .tl time{text-align:left;padding:0}
-  .tl{margin-left:0}
+  .scroll-cue{display:none}
 }
 @media (max-width:820px){
   .burger{display:inline-flex}
-  .menu{position:fixed;inset:72px 0 auto 0;flex-direction:column;align-items:stretch;gap:0;background:rgba(8,9,10,.97);backdrop-filter:blur(16px);padding:10px var(--pad) 26px;border-bottom:1px solid var(--line);transform:translateY(-12px);opacity:0;pointer-events:none;transition:opacity .25s,transform .3s var(--ease)}
+  .menu{position:fixed;inset:74px 0 auto 0;flex-direction:column;align-items:stretch;gap:0;background:rgba(8,9,10,.97);backdrop-filter:blur(16px);padding:10px var(--pad) 26px;border-bottom:1px solid var(--line);transform:translateY(-12px);opacity:0;pointer-events:none;transition:opacity .25s,transform .3s var(--ease)}
   .menu.open{opacity:1;transform:none;pointer-events:auto}
   .menu a:not(.btn){padding:16px 0;border-bottom:1px solid var(--line);font-size:1.05rem}
+  .menu a:not(.btn)::after{display:none}
   .menu .btn{margin-top:18px;justify-content:center}
+  .hero{min-height:auto;padding-top:118px}
+  .contact-sec{min-height:auto;padding-top:40px}
 }
 @media (max-width:560px){
   .stats{grid-template-columns:1fr}
-  .logos{grid-template-columns:1fr 1fr}
-  .chip.c1{left:-2%;top:6%}
-  .eyebrow{border-radius:18px;line-height:1.5}
-  .chip.c2{bottom:10%}
   .cta-row .btn{flex:1 1 100%;justify-content:center}
-  .faq details p{padding-right:0}
+  .chip.c1{top:6%}
+  .gallery figure{height:auto;max-height:70vh}
+  .gallery figure img,.gallery figure video{height:auto;max-height:70vh;width:auto}
+  .gallery figure.wide{width:86vw}
+  .switch{display:grid;width:100%}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   *,*::before,*::after{animation:none!important;transition:none!important}
-  .js .rv{opacity:1;transform:none}
+  .js .rv,.js .hero .h-fade,.js .stage{opacity:1;transform:none}
+  .js .split .w > span,.js .hero h1 .w > span{transform:none}
+  .intro{display:none}
 }
 </style>
 
@@ -278,34 +395,36 @@ footer{padding:36px 0 54px;border-top:1px solid var(--line)}
 {
 "@context":"https://schema.org",
 "@graph":[
-{"@type":"Person","@id":"https://oalecking.netlify.app/#person","name":"Álec Alves","jobTitle":"Gestor de Tráfego Pago","description":"Gestor de tráfego pago com foco em Meta Ads e Google Ads, geração de leads, landing pages e vídeo para anúncios. No marketing digital desde 2014.","url":"https://oalecking.netlify.app/","image":"https://oalecking.netlify.app/assets/img/alec-alves-retrato.webp","address":{"@type":"PostalAddress","addressLocality":"Monte Mor","addressRegion":"SP","addressCountry":"BR"},"worksFor":{"@type":"Organization","name":"Pixel Assessoria de Marketing"},"alumniOf":{"@type":"EducationalOrganization","name":"SAGA"},"knowsLanguage":["pt-BR","en"],"knowsAbout":["Tráfego pago","Meta Ads","Google Ads","Geração de leads","Landing pages","SEO","Edição de vídeo","Roteiro para anúncios","Marketing jurídico"],"sameAs":["https://www.linkedin.com/in/alealvex/","https://www.instagram.com/oalecking/"]},
+{"@type":"Person","@id":"https://oalecking.netlify.app/#person","name":"Álec Alves","alternateName":"Álec Alves Oliveira de Almeida","jobTitle":"Gestor de Tráfego Pago","description":"Gestor de tráfego pago (Meta Ads e Google Ads), criador de sites, landing pages e vídeos para anúncio. No marketing digital desde 2014.","url":"https://oalecking.netlify.app/","image":"https://oalecking.netlify.app/assets/img/alec-alves-retrato.webp","email":"mailto:alvesalec99@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Monte Mor","addressRegion":"SP","addressCountry":"BR"},"birthPlace":{"@type":"Place","name":"Salvador, BA"},"worksFor":{"@type":"Organization","name":"Pixel Assessoria de Marketing"},"alumniOf":[{"@type":"EducationalOrganization","name":"SAGA"},{"@type":"EducationalOrganization","name":"Associação Cultural Revoar"}],"knowsLanguage":["pt-BR","en"],"knowsAbout":["Tráfego pago","Meta Ads","Google Ads","Geração de leads","Landing pages","Criação de sites","SEO","Roteiro para anúncios","Edição de vídeo","Identidade de marca","Marketing jurídico"],"sameAs":["https://www.linkedin.com/in/alealvex/","https://www.instagram.com/oalecking/"]},
 {"@type":"WebSite","@id":"https://oalecking.netlify.app/#website","url":"https://oalecking.netlify.app/","name":"Álec Alves","inLanguage":"pt-BR","publisher":{"@id":"https://oalecking.netlify.app/#person"}},
-{"@type":"ProfilePage","url":"https://oalecking.netlify.app/","name":"Álec Alves | Gestor de Tráfego Pago","inLanguage":"pt-BR","mainEntity":{"@id":"https://oalecking.netlify.app/#person"},"dateModified":"2026-11-18"},
-{"@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"Com quais plataformas de anúncio você trabalha?","acceptedAnswer":{"@type":"Answer","text":"Meta Ads e Google Ads são o dia a dia. Também opero TikTok Ads e LinkedIn Ads. Já gerenciei mais de 20 contas de anúncio, de R$ 1.500 a R$ 50 mil por mês."}},
-{"@type":"Question","name":"Você atende escritórios de advocacia?","acceptedAnswer":{"@type":"Answer","text":"Sim, é o meu foco atual. Faço campanhas de Meta Ads para escritórios de direito previdenciário, bancário, tributário e do agronegócio, com roteiros e criativos dentro das regras de publicidade da OAB."}},
-{"@type":"Question","name":"Você também faz a landing page e o vídeo do anúncio?","acceptedAnswer":{"@type":"Answer","text":"Sim. Crio landing pages em WordPress ou HTML, CSS e JavaScript, com SEO e Google Analytics. No vídeo, escrevo o roteiro, gravo como apresentador e edito no Premiere, DaVinci Resolve ou CapCut."}},
-{"@type":"Question","name":"Onde você trabalha e quais idiomas fala?","acceptedAnswer":{"@type":"Answer","text":"Moro em Monte Mor (SP), na região de Campinas. Trabalho de forma remota, híbrida ou presencial na região de Campinas. Falo português nativo e inglês intermediário."}}
-]}
+{"@type":"ProfilePage","url":"https://oalecking.netlify.app/","name":"Álec Alves | Gestor de Tráfego Pago, Sites e Vídeo","inLanguage":"pt-BR","mainEntity":{"@id":"https://oalecking.netlify.app/#person"},"dateModified":"2026-11-18"}
 ]
 }
 </script>
 </head>
 
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b8ff45"/><stop offset="1" stop-color="#5fb800"/></linearGradient></defs>
+  <symbol id="logo" viewBox="0 0 826 530"><path pathLength="1" fill-rule="evenodd" d="M183 523C181 519 179 516 179 514C179 513 179 512 178 512C177 511 177 510 177 508C177 507 177 506 176 506C174 504 175 500 178 498C183 496 222 470 229 464C231 462 235 459 238 456C244 452 306 390 314 380C320 374 323 370 332 358C335 355 338 351 340 349C343 345 345 342 352 332C355 328 359 323 360 321C362 319 367 311 372 305C376 299 380 292 382 291C383 290 385 287 386 285C387 283 391 277 394 271C398 266 401 261 401 261C401 259 411 245 413 245C414 245 427 263 432 272C434 277 460 313 465 321C467 323 472 329 475 334C478 339 482 345 485 348C487 350 491 355 492 357C498 365 502 370 523 393C538 411 587 457 598 465C599 466 604 470 608 472C619 480 640 494 644 496C650 499 653 504 650 506C649 506 649 507 649 508C649 509 648 512 647 513C646 515 645 518 645 519C645 520 644 522 643 523C641 525 639 525 627 525C619 525 613 525 612 524C607 521 603 518 599 515C597 513 592 509 589 506C585 503 579 498 575 494C565 486 523 444 513 432C508 427 502 420 498 415C494 411 489 405 486 402C484 399 480 395 478 392C475 389 473 385 472 384C471 383 468 379 466 377C465 375 462 371 460 369C459 367 456 363 455 361C453 359 449 354 446 350C444 346 439 340 437 336C428 324 422 315 420 311C415 302 411 303 401 318C393 330 381 347 375 355C374 357 371 361 368 365C366 369 362 373 360 375C357 379 352 386 346 394C343 397 339 402 336 406C332 410 328 415 326 418C311 437 252 496 237 506C235 508 231 511 228 514C213 525 214 525 199 525C186 525 185 525 183 523ZM256 524C255 524 256 522 258 521C276 507 320 465 337 445C353 427 357 423 360 418C363 415 366 411 368 408C371 405 374 401 376 399C380 393 385 387 388 382C390 380 393 376 395 374C396 372 400 367 402 363C411 350 413 348 418 355C419 357 422 362 425 366C428 370 433 376 435 379C437 382 440 386 442 389C444 391 447 395 448 397C453 403 458 410 466 418C469 422 473 427 476 430C494 454 543 501 568 521C570 522 571 524 570 524C570 525 256 525 256 524ZM485 492C485 491 483 488 480 485C477 482 473 478 472 476C470 473 466 469 464 467C461 464 457 460 456 458C454 456 452 454 452 453C451 452 449 450 448 448C446 446 444 444 444 443C443 442 440 438 437 434C434 430 430 426 430 425C429 424 426 421 424 417C414 403 412 403 402 417C400 421 397 424 396 425C396 426 391 431 386 438C381 444 377 451 375 452C374 453 372 456 370 458C369 460 364 465 360 469C357 472 352 477 350 480C349 482 346 485 344 487C338 493 333 493 413 493C476 493 485 493 485 492ZM162 468C160 464 159 461 159 460C159 460 158 457 156 454C154 450 153 447 153 446C153 446 152 443 150 440C148 436 147 433 147 432C147 432 146 429 144 426C142 422 141 419 141 418C141 418 140 415 138 412C136 408 135 405 135 404C135 404 134 401 132 398C130 394 129 391 129 390C129 390 128 387 126 384C124 380 123 377 123 376C123 376 122 373 120 370C118 366 117 363 117 362C117 362 116 359 115 358C114 356 113 353 113 353C113 352 111 348 109 344C107 339 105 335 105 334C105 334 104 331 103 330C102 328 101 325 101 325C101 324 100 321 98 318C96 314 95 311 95 310C95 310 94 307 92 304C90 300 89 297 89 296C89 296 88 293 86 290C84 286 83 283 83 282C83 282 82 279 80 276C78 272 77 269 77 268C77 268 76 265 74 262C72 258 71 255 71 254C71 254 70 251 68 248C66 244 65 241 65 240C65 240 64 237 62 234C60 230 59 227 59 226C59 226 58 223 56 220C54 216 53 213 53 212C53 212 52 209 50 206C48 203 47 200 48 200C49 198 53 199 61 204C63 206 65 207 65 207C66 207 68 208 70 210C73 212 75 213 75 213C76 213 78 214 80 216C83 218 85 219 85 219C86 219 92 223 95 225C96 226 97 228 97 229C97 230 98 233 99 234C100 236 101 239 101 240C101 240 102 243 103 244C104 246 105 249 105 250C105 250 106 253 107 254C108 256 109 259 109 260C109 260 110 263 111 264C112 266 113 269 113 269C113 270 114 273 116 276C118 280 119 283 119 284C119 284 120 287 121 288C122 290 123 293 123 294C123 294 124 297 125 298C126 300 127 303 127 304C127 304 128 307 129 309C130 310 131 313 131 313C131 314 132 317 134 320C136 324 137 327 137 328C137 328 138 331 139 332C140 334 141 337 141 338C141 338 142 341 143 342C144 344 145 347 145 348C145 348 146 351 147 352C148 354 149 357 149 357C149 358 150 361 152 364C154 368 155 371 155 372C155 372 156 375 157 376C158 378 159 381 159 382C159 382 160 385 161 386C162 388 163 391 163 391C163 392 164 395 166 398C168 402 169 405 169 406C169 406 170 409 171 410C172 412 173 415 173 416C173 416 174 419 175 420C176 422 177 425 177 426C177 429 181 427 195 415C203 409 254 358 263 347C267 343 273 336 276 332C280 328 284 323 286 321C287 319 290 315 292 313C294 310 296 307 297 306C298 305 301 301 303 299C312 286 347 236 347 235C347 234 349 232 350 229C352 226 355 223 356 221C357 219 359 216 360 213C362 211 363 209 363 208C363 208 364 207 364 206C365 205 367 202 369 199C370 196 372 192 373 192C373 191 375 188 377 185C385 169 385 169 395 189L403 204 401 208C399 211 397 214 396 217C394 219 393 221 393 221C393 222 392 224 390 226C388 229 387 231 387 232C387 232 386 233 386 234C385 235 383 237 382 239C380 243 344 297 339 303C338 305 335 309 334 311C332 313 329 317 328 319C326 321 323 325 322 326C321 327 319 330 317 333C308 344 304 349 300 354C297 357 292 363 288 367C279 378 228 429 222 434C214 440 207 446 202 450C200 452 195 456 191 458C179 467 167 475 166 475C166 475 164 472 162 468ZM656 473C651 470 646 467 636 460C632 457 627 453 626 452C625 451 621 449 618 446C615 444 611 440 608 438C602 433 547 378 538 367C516 342 514 339 502 323C496 315 492 310 489 307C484 301 453 256 450 249C449 247 446 244 444 241C443 238 441 236 441 235C441 235 440 233 438 231C437 228 434 224 433 221C431 218 429 215 429 214C428 213 426 210 425 208L423 203 427 194C430 189 433 184 434 182C436 179 437 176 438 174C439 172 440 171 440 171C441 171 446 178 450 187C452 191 455 195 456 196C456 197 457 198 457 198C457 199 458 201 460 204C462 206 463 208 463 209C463 209 464 211 466 214C468 216 469 218 469 219C469 219 470 221 472 224C474 226 475 228 475 229C475 230 514 288 519 294C520 296 523 299 524 301C526 303 529 307 532 310C534 313 537 317 538 319C540 321 544 326 548 330C551 334 557 341 561 345C570 355 621 407 630 414C642 424 643 426 646 426C648 425 651 422 651 420C651 419 652 416 653 414C654 413 655 410 655 410C655 409 656 406 657 404C658 403 659 400 659 400C659 399 660 396 662 392C664 389 665 386 665 385C665 385 666 382 667 380C668 379 669 376 669 376C669 375 670 372 672 368C674 365 675 362 675 361C675 361 676 358 677 356C678 355 679 352 679 352C679 351 680 348 681 346C682 345 683 342 683 342C683 341 684 338 686 334C688 331 689 328 689 327C689 327 690 324 691 322C692 321 693 318 693 318C693 317 694 314 695 312C696 311 697 308 697 308C697 307 698 304 699 302C700 301 701 298 701 298C701 297 702 294 704 290C706 287 707 284 707 283C707 282 707 281 708 280C709 280 709 279 709 278C709 277 710 274 712 270C714 267 715 264 715 263C715 263 716 260 717 258C718 257 719 254 719 254C719 253 720 250 721 248C722 247 723 244 723 244C723 243 724 240 725 238C726 237 727 234 727 233C727 228 737 220 748 214C750 213 753 211 756 210C758 209 761 207 763 206C764 205 769 202 772 200C778 196 780 196 777 201C776 203 775 206 775 206C775 207 774 210 772 214C770 217 769 220 769 220C769 221 768 224 766 227C764 231 763 234 763 235C763 235 762 238 761 240C760 241 759 244 759 244C759 245 758 248 756 252C754 255 753 258 753 258C753 259 751 263 749 268C747 272 745 276 745 277C745 277 744 280 743 282C742 283 741 286 741 286C741 287 740 290 738 294C736 297 735 300 735 300C735 301 734 304 732 308C730 311 729 314 729 314C729 315 728 318 726 322C724 325 723 328 723 328C723 329 722 332 720 336C718 339 717 342 717 342C717 343 716 346 714 350C712 353 711 356 711 356C711 357 710 360 708 364C706 367 705 370 705 371C705 371 704 374 703 376C702 377 701 380 701 380C701 381 700 384 698 388C696 391 695 394 695 394C695 395 694 398 692 402C690 405 689 408 689 408C689 409 688 412 686 416C684 419 683 422 683 422C683 423 682 426 680 430C678 433 677 436 677 436C677 437 676 440 674 444C672 447 671 450 671 450C671 451 670 454 668 458C666 461 665 464 665 464C665 466 661 475 660 475C660 475 658 474 656 473ZM186 388C186 387 185 386 185 385C185 384 184 381 183 380C182 378 181 375 181 374C181 374 180 371 179 370C178 368 177 365 177 364C177 364 176 361 175 360C174 358 173 355 173 354C173 354 172 351 171 350C170 348 169 345 169 344C169 344 168 341 167 340C166 338 165 335 165 334C165 333 165 332 164 332C163 331 163 330 163 329C163 328 162 325 161 324C160 322 159 319 159 318C159 318 158 315 157 314C156 312 155 309 155 308C155 308 154 305 153 304C152 302 151 299 151 298C151 298 150 295 149 294C148 292 147 289 147 288C147 287 147 286 146 286C145 285 145 284 145 283C145 282 144 279 143 278C142 276 141 273 141 272C141 272 140 269 139 268C138 266 137 263 137 262C137 262 136 259 135 258C134 256 133 253 133 252C133 252 132 249 131 248C130 246 129 243 129 242C129 241 129 240 128 239C127 239 127 238 128 238C128 237 135 240 139 244C140 245 143 247 145 248C156 254 163 260 163 265C163 266 164 269 165 270C166 272 167 275 167 276C167 276 168 279 169 280C170 282 171 285 171 286C171 287 171 288 172 288C173 289 173 290 173 291C173 292 174 295 175 296C176 298 177 301 177 302C177 303 177 304 178 304C179 305 179 306 179 307C179 308 180 311 181 312C182 314 183 317 183 318C183 318 184 321 185 322C186 324 187 327 187 328C187 328 188 331 189 332C190 334 191 337 191 337C191 338 192 341 194 344C196 348 197 351 197 352C197 352 198 355 199 356C200 358 201 361 201 362C201 362 202 365 203 366C207 373 206 375 192 386C188 389 188 389 186 388ZM628 382C620 374 620 372 623 366C624 365 625 362 625 362C625 361 626 358 627 356C628 355 629 352 629 352C629 351 630 348 631 346C632 345 633 342 633 342C633 341 634 338 636 334C638 331 639 328 639 327C639 326 639 325 640 324C641 324 641 323 641 322C641 321 642 318 643 316C644 315 645 312 645 311C645 310 645 309 646 308C647 308 647 307 647 306C647 305 648 302 649 300C650 299 651 296 651 296C651 295 652 292 653 290C654 289 655 286 655 285C655 284 655 283 656 282C657 282 657 281 657 280C657 278 657 277 658 276C659 276 659 275 659 274C659 273 660 270 661 268C662 267 663 264 663 263C663 259 670 252 683 246C685 245 688 243 689 242C695 237 700 236 697 241C696 242 695 244 695 245C695 246 695 247 694 248C693 248 693 249 693 250C693 251 692 254 691 256C690 257 689 260 689 261C689 262 689 263 688 264C687 264 687 265 687 266C687 267 686 270 685 272C684 273 683 276 683 277C683 278 683 279 682 280C681 280 681 281 681 282C681 283 680 286 679 288C678 289 677 292 677 292C677 293 676 296 675 298C674 299 673 302 673 302C673 303 672 306 671 308C670 309 669 312 669 313C669 314 669 315 668 316C667 316 667 317 667 318C667 319 666 322 665 324C664 325 663 328 663 329C663 330 663 331 662 332C661 332 661 333 661 334C661 335 660 338 659 340C658 341 657 344 657 344C657 345 656 348 654 352C652 355 651 358 651 359C651 359 650 362 649 364C648 365 647 368 647 368C647 369 646 372 645 374C644 375 643 378 643 378C643 381 638 389 637 389C636 389 632 386 628 382ZM240 325C236 323 232 321 231 321C230 321 229 321 228 320C228 319 225 319 222 319C220 319 217 319 216 318C216 317 212 317 208 317C203 317 200 317 200 316C200 315 202 315 204 315C206 315 208 315 208 314C209 313 210 313 212 313C213 313 214 313 214 312C215 311 217 311 218 311C220 311 222 311 222 310C223 309 224 309 226 309C227 309 228 309 228 308C229 307 230 307 232 307C233 307 234 307 234 306C235 305 236 305 238 305C239 305 240 305 240 304C241 303 242 303 243 303C245 303 262 295 264 292C265 292 266 291 266 291C270 291 285 279 297 267C305 259 310 256 306 261C305 262 303 265 301 267C300 269 297 273 296 275C294 277 291 281 290 282C289 283 287 286 285 289C283 291 280 295 278 298C273 304 249 329 248 329C248 329 244 327 240 325ZM566 319C557 309 552 303 546 295C544 293 540 288 538 286C535 283 532 278 530 276C529 274 526 270 524 268C518 261 520 260 527 266C534 274 540 279 551 286C561 293 584 305 587 305C588 305 589 305 590 306C590 307 591 307 592 307C594 307 595 307 596 308C596 309 597 309 598 309C600 309 601 309 602 310C602 311 603 311 604 311C606 311 607 311 608 312C608 313 610 313 612 313C613 313 615 313 616 314C616 315 617 315 619 315C621 315 622 315 622 316C622 317 619 317 616 317C613 317 610 317 610 318C609 319 606 319 604 319C601 319 598 319 598 320C597 321 596 321 594 321C592 321 588 323 584 325C579 327 576 329 576 329C576 329 571 325 566 319ZM616 304C616 303 615 303 614 303C612 303 611 303 610 302C610 301 609 301 607 301C606 301 600 299 594 296C578 288 565 275 557 259C555 256 553 253 552 252C552 251 551 249 551 248C551 247 551 246 550 246C549 245 549 244 549 242C549 241 549 240 548 240C547 239 547 237 547 236C547 234 547 232 546 232C545 231 545 226 545 218C545 210 545 205 546 204C547 204 547 203 547 201C547 199 548 196 549 194C550 193 551 190 551 189C551 187 554 182 556 182C556 182 557 188 557 197C557 206 557 214 558 214C559 215 559 216 559 218C559 219 559 220 560 220C561 221 561 222 561 224C561 226 562 229 563 230C564 232 565 235 565 235C565 237 573 253 575 256C576 257 577 259 578 261C579 263 582 266 583 268C585 270 588 274 590 277C595 285 599 288 614 299C618 301 621 304 620 304C620 305 617 305 616 304ZM269 274C269 274 271 272 273 269C281 258 287 243 287 237C287 234 287 231 288 230C289 230 289 224 289 214C289 204 289 198 288 198C287 197 287 196 287 194C287 192 286 189 285 188C284 186 283 183 283 183C283 181 278 174 274 170C271 166 270 166 266 167C263 167 261 167 261 166C260 165 258 165 256 165C255 165 253 165 252 164C252 163 247 163 239 163C231 163 226 163 226 164C225 165 223 165 220 165C218 165 216 165 216 166C215 167 213 167 212 167C210 167 208 167 208 168C207 169 205 169 204 169C202 169 200 169 200 170C199 171 197 171 194 171C192 171 190 171 189 172C189 173 187 173 186 173C184 173 182 173 182 174C181 175 179 175 176 175C174 175 172 175 171 176C171 177 131 177 130 176C130 175 128 175 125 175C123 175 121 175 120 174C120 173 119 173 118 173C116 173 107 168 108 168C108 167 113 167 118 167C124 167 128 167 128 166C129 165 132 165 134 165C137 165 140 165 140 164C141 163 143 163 144 163C146 163 148 163 148 162C149 161 150 161 152 161C153 161 154 161 155 160C155 159 156 159 157 159C159 159 160 159 160 158C161 157 162 157 164 157C165 157 166 157 167 156C167 155 168 155 169 155C170 155 171 155 171 154C171 153 168 153 164 153C159 153 156 153 156 154C155 155 148 155 138 155C128 155 121 155 120 154C120 153 117 153 114 153C112 153 109 153 109 152C108 151 106 151 104 151C102 151 98 150 96 149C95 148 92 147 92 147C88 147 62 130 62 128C62 127 67 127 67 128C68 129 69 129 70 129C72 129 73 129 74 130C74 131 76 131 78 131C81 131 83 131 83 132C84 133 134 133 134 132C135 131 136 131 137 131C138 131 139 131 139 130C139 129 135 129 130 129C125 129 121 129 120 128C120 127 118 127 116 127C115 127 113 127 112 126C112 125 110 125 108 125C105 125 103 125 102 124C102 123 101 123 100 123C98 123 97 123 96 122C96 121 95 121 93 121C91 121 88 120 86 119C85 118 82 117 82 117C80 117 61 107 56 104C51 101 33 82 29 77C25 72 27 70 32 75C35 77 42 82 47 84C48 85 52 87 55 88C59 90 62 91 63 91C64 91 65 91 66 92C66 93 68 93 70 93C71 93 73 93 73 94C74 95 75 95 76 95C78 95 79 95 79 96C80 97 82 97 84 97C87 97 89 97 89 98C90 99 93 99 95 99C98 99 101 99 102 100C102 101 125 101 125 100C125 99 124 99 122 99C120 99 119 99 118 98C118 97 117 97 116 97C114 97 113 97 113 96C112 95 110 95 108 95C107 95 105 95 104 94C104 93 103 93 101 93C100 93 99 93 98 92C98 91 97 91 96 91C95 91 92 90 91 89C89 88 86 87 86 87C85 87 82 86 78 84C75 82 72 81 71 81C70 81 69 80 67 79C66 78 64 77 63 77C58 77 25 49 18 38C15 33 9 22 9 20C9 20 8 17 7 16C5 12 4 9 6 8C6 7 8 10 10 13C15 20 27 32 36 38C44 43 67 55 69 55C70 55 71 55 71 56C72 57 73 57 74 57C75 57 78 58 80 59C81 60 84 61 86 61C88 61 89 61 90 62C90 63 91 63 92 63C94 63 95 63 95 64C96 65 98 65 100 65C103 65 105 65 105 66C106 67 107 67 108 67C110 67 111 67 111 68C112 69 114 69 116 69C119 69 121 69 121 70C122 71 125 71 128 71C130 71 133 71 134 72C134 73 137 73 140 73C142 73 145 73 145 74C146 75 148 75 150 75C153 75 155 75 156 76C156 77 158 77 160 77C163 77 165 77 166 78C166 79 169 79 172 79C174 79 177 79 178 80C178 81 180 81 182 81C185 81 187 81 188 82C188 83 190 83 192 83C195 83 197 83 198 84C198 85 200 85 202 85C203 85 205 85 206 86C206 87 207 87 208 87C210 87 211 87 212 88C212 89 214 89 216 89C217 89 219 89 220 90C220 91 221 91 222 91C223 91 226 92 228 93C229 94 232 95 232 95C234 95 241 99 247 102C249 104 251 105 252 105C252 105 255 108 278 129C289 139 301 156 301 162C301 163 301 164 302 164C303 165 303 166 303 168C303 169 303 170 304 170C305 171 305 172 305 174C305 175 305 176 306 176C307 177 307 185 307 197C307 209 307 217 306 218C305 218 305 220 305 222C305 223 305 225 304 226C303 226 303 227 303 228C303 229 302 232 301 234C300 235 299 238 299 238C299 243 292 252 280 265C272 274 269 276 269 274ZM545 265C540 259 535 254 535 254C535 253 534 251 532 249C528 243 527 240 527 238C527 238 526 235 525 234C524 232 523 229 523 228C523 227 523 226 522 226C521 225 521 223 521 222C521 220 521 218 520 218C519 217 519 214 519 212C519 209 519 206 518 206C517 205 517 201 517 196C517 191 517 187 518 186C519 186 519 183 519 180C519 178 519 175 520 174C521 174 521 173 521 172C521 170 521 169 522 168C523 168 523 167 523 166C523 164 530 150 534 144C536 140 549 127 561 117C561 116 563 114 565 112C568 107 589 95 594 95C594 95 597 94 598 93C600 92 603 91 604 91C605 91 606 91 606 90C607 89 608 89 610 89C611 89 612 89 612 88C613 87 615 87 616 87C618 87 620 87 620 86C621 85 623 85 624 85C626 85 628 85 628 84C629 83 631 83 634 83C636 83 638 83 638 82C639 81 640 81 642 81C643 81 644 81 644 80C645 79 648 79 652 79C655 79 658 79 658 78C659 77 661 77 664 77C666 77 668 77 668 76C669 75 672 75 674 75C677 75 680 75 680 74C681 73 684 73 686 73C689 73 692 73 692 72C693 71 696 71 698 71C701 71 704 71 704 70C705 69 707 69 708 69C710 69 712 69 712 68C713 67 715 67 718 67C720 67 722 67 722 66C723 65 725 65 726 65C728 65 730 65 730 64C731 63 732 63 734 63C735 63 736 63 736 62C737 61 738 61 740 61C742 61 745 60 746 59C748 58 751 57 752 57C752 57 755 56 756 55C758 54 761 53 761 53C763 53 779 45 782 43C783 42 785 41 787 40C797 34 813 18 818 9C819 7 820 5 820 6C821 7 821 11 820 11C819 12 819 13 819 14C819 16 819 17 818 17C817 18 817 19 817 20C817 22 812 32 808 38C805 43 789 59 784 62C770 73 748 85 744 85C744 85 741 86 740 87C738 88 735 89 734 89C733 89 732 89 732 90C731 91 730 91 728 91C727 91 726 91 726 92C725 93 724 93 722 93C721 93 720 93 720 94C719 95 718 95 716 95C715 95 714 95 714 96C713 97 711 97 710 97C708 97 706 97 706 98C705 99 704 99 703 99C702 99 701 99 701 100C701 101 722 101 722 100C723 99 726 99 730 99C733 99 736 99 736 98C737 97 739 97 740 97C742 97 744 97 744 96C745 95 747 95 748 95C750 95 752 95 752 94C753 93 754 93 756 93C758 93 761 92 762 91C764 90 767 89 767 89C772 89 794 76 797 71C799 68 801 67 801 69C801 71 791 84 784 91C774 101 754 115 748 115C748 115 745 116 744 117C742 118 739 119 738 119C737 119 736 119 736 120C735 121 734 121 732 121C731 121 730 121 730 122C729 123 727 123 726 123C724 123 722 123 722 124C721 125 719 125 718 125C716 125 714 125 714 126C713 127 711 127 708 127C706 127 704 127 704 128C703 129 698 129 693 129C687 129 683 129 683 130C683 131 684 131 686 131C688 131 689 131 690 132C690 133 742 133 742 132C743 131 745 131 746 131C748 131 750 131 750 130C751 129 752 129 753 129C755 129 756 128 757 128C757 127 759 127 760 127C761 128 760 129 756 134C753 137 750 139 750 139C749 139 747 140 745 142C739 146 736 147 734 147C734 147 731 148 730 149C728 150 725 151 723 151C721 151 720 151 720 152C719 153 716 153 714 153C711 153 708 153 708 154C707 155 700 155 690 155C680 155 673 155 672 154C671 152 657 153 657 155C656 155 657 156 658 157C659 157 660 158 661 158C662 159 664 159 665 159C666 159 667 159 668 160C668 161 670 161 672 161C673 161 675 161 676 162C676 163 678 163 680 163C681 163 683 163 684 164C684 165 686 165 688 165C691 165 693 165 694 166C694 167 699 167 705 167C711 167 716 167 716 168C717 169 715 171 712 171C711 171 710 171 710 172C709 173 708 173 706 173C705 173 704 173 704 174C703 175 701 175 700 175C698 175 696 175 696 176C695 177 655 177 654 176C654 175 651 175 648 175C646 175 643 175 642 174C642 173 640 173 638 173C635 173 633 173 632 172C632 171 631 171 630 171C628 171 627 171 626 170C626 169 625 169 624 169C622 169 621 169 620 168C620 167 618 167 616 167C613 167 611 167 610 166C610 165 607 165 604 165C602 165 599 165 598 164C598 163 593 163 585 163C577 163 572 163 572 164C571 165 569 165 567 165C564 165 564 165 564 162C565 159 565 159 563 159C558 159 541 179 541 185C541 186 541 187 540 188C539 188 539 190 539 192C539 193 539 195 538 196C537 196 537 203 537 215C537 227 537 234 538 234C539 235 539 237 539 238C539 240 539 242 540 242C541 243 541 244 541 246C541 247 541 248 542 248C543 249 543 250 543 251C543 252 544 255 546 257C547 260 549 263 550 265C551 267 553 270 555 271C557 274 558 275 556 275C556 275 551 270 545 265ZM515 237C510 230 503 216 503 214C503 213 503 212 502 212C501 211 501 210 501 208C501 207 501 206 500 206C499 205 499 203 499 202C499 200 499 198 498 198C497 197 497 194 497 192C497 189 497 186 496 186C495 185 495 174 495 156C495 139 495 128 494 127C493 127 493 125 493 122C493 120 493 118 492 117C491 117 491 115 491 114C491 112 491 110 490 109C489 109 489 108 490 108C493 106 491 103 488 103C486 103 482 102 481 101C479 100 476 99 476 99C475 99 472 98 470 97C469 96 466 95 465 95C464 95 463 95 462 94C462 93 461 93 460 93C458 93 457 93 456 92C456 91 451 91 443 91C429 92 429 91 435 85C442 79 443 79 455 79C467 79 469 78 469 74C469 67 487 51 495 51C497 51 498 51 498 50C499 49 510 49 528 49C545 49 556 49 556 48C557 47 560 47 562 47C565 47 568 47 568 46C569 44 572 45 573 47C574 50 553 67 546 67C546 67 545 68 545 68C545 70 550 73 553 73C553 73 556 74 558 76C561 78 563 79 564 79C565 79 575 90 575 91C575 92 575 93 574 93C573 93 571 94 569 96C566 97 563 99 561 100C554 104 539 117 535 123C534 125 531 129 529 131C525 137 517 153 517 155C517 156 517 157 516 158C515 158 515 159 515 160C515 162 515 163 514 164C513 164 513 166 513 168C513 171 513 173 512 174C511 174 511 182 511 195C511 208 511 216 512 216C513 217 513 219 513 222C513 224 513 226 514 226C515 227 515 228 515 229C515 230 516 233 517 234C519 238 520 242 518 242C518 242 516 240 515 237ZM308 238C307 238 307 237 308 237C309 236 309 235 309 234C309 232 309 231 310 230C311 230 311 229 311 228C311 226 311 225 312 224C313 224 313 223 313 222C313 220 313 219 314 218C315 218 315 210 315 196C315 182 315 174 314 174C313 173 313 171 313 168C313 166 313 164 312 164C311 163 311 162 311 161C311 160 310 157 309 156C308 154 307 151 307 150C307 142 276 107 261 98C255 95 249 91 249 90C249 89 257 82 260 79C265 76 276 71 278 71C280 71 280 69 278 67C277 66 275 65 274 65C269 65 252 50 253 46C254 45 254 45 255 46C256 46 259 47 262 47C265 47 267 47 268 48C268 49 279 49 296 49C314 49 325 49 326 50C326 51 328 51 330 51C338 51 350 60 355 70C356 73 358 76 358 77C359 78 361 79 370 79C376 79 383 80 384 80C387 82 395 89 394 90C394 91 389 91 382 91C375 91 370 91 370 92C369 93 368 93 366 93C365 93 364 93 364 94C363 95 362 95 360 95C359 95 358 95 358 96C357 97 356 97 355 97C354 97 351 98 350 99C348 100 345 101 344 101C343 101 342 101 342 102C341 103 340 103 339 103C338 103 337 104 337 105C337 106 337 107 336 108C335 108 335 109 335 110C335 112 335 113 334 114C333 114 333 122 333 136C333 149 333 157 332 158C331 158 331 164 331 172C331 181 331 187 330 188C329 188 329 190 329 192C329 193 329 195 328 196C327 196 327 198 327 200C327 201 327 203 326 204C325 204 325 205 325 206C325 208 325 209 324 210C323 210 323 211 323 212C323 214 323 215 322 216C321 216 321 217 321 218C321 223 309 241 308 238ZM410 192C410 191 408 187 406 184C404 180 401 175 400 172C399 170 396 166 395 163C393 160 391 157 390 156C389 155 389 153 393 147C395 142 397 138 397 138C397 137 399 133 401 128C403 124 405 120 405 120C405 119 406 116 408 112C410 109 411 106 411 105C412 104 412 103 413 103C414 104 419 114 419 116C419 116 420 119 421 121C422 122 423 125 423 125C423 126 426 132 429 138C437 153 437 154 430 165C428 167 427 169 427 170C427 170 426 171 426 172C425 173 423 176 421 179C415 191 412 194 410 192Z"/></symbol>
+</svg>
+
+<div class="intro" id="intro" aria-hidden="true"><svg viewBox="0 0 826 530"><use href="#logo"/></svg></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="cur" aria-hidden="true"></div><div class="cur-ring" aria-hidden="true"><span></span></div>
+
 <a class="skip" href="#conteudo">Ir para o conteúdo</a>
 
 <header class="top" id="top">
   <div class="wrap nav">
-    <a class="brand" href="#inicio" aria-label="Álec Alves, início"><i></i>Álec Alves</a>
+    <a class="brand" href="#inicio" aria-label="Álec Alves, voltar ao início"><svg class="logo-svg" viewBox="0 0 826 530" aria-hidden="true"><use href="#logo"/></svg>Álec Alves</a>
     <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span></button>
     <nav class="menu" id="menu" aria-label="Principal">
-      <a href="#numeros">Resultados</a>
-      <a href="#ciclo">O que faço</a>
-      <a href="#trabalho">Trabalho</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#projetos">Projetos</a>
       <a href="#trajetoria">Trajetória</a>
       <a href="#sobre">Sobre</a>
-      <a class="btn btn-primary btn-sm" href="#contato">Falar comigo</a>
+      <a class="btn btn-primary btn-sm magnetic" href="#contato">Vamos conversar</a>
     </nav>
   </div>
 </header>
@@ -313,195 +432,206 @@ footer{padding:36px 0 54px;border-top:1px solid var(--line)}
 <main id="conteudo">
 
 <section class="hero" id="inicio">
+  <div class="spot" aria-hidden="true"></div>
   <div class="wrap hero-grid">
     <div>
-      <p class="eyebrow mono"><i></i><span>Aberto a propostas · <b>remoto, híbrido ou Campinas</b></span></p>
-      <h1>Gestor de tráfego pago que também faz a <em>página</em> e o <em>vídeo</em> do anúncio.</h1>
-      <p class="lead"><strong>Álec Alves.</strong> Meta Ads e Google Ads, landing pages e vídeo, do roteiro ao contrato assinado. No digital desde 2014. Antes disso, no palco.</p>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="#trabalho">Ver trabalhos
+      <p class="pill mono h-fade d1"><i></i><span>Disponível para projetos e vagas</span></p>
+      <h1 aria-label="Quem não aparece, não vende.">
+        <span class="ln" aria-hidden="true"><span class="w"><span style="--i:0">Quem</span></span> <span class="w"><span style="--i:1">não</span></span></span>
+        <span class="ln" aria-hidden="true"><span class="w"><span style="--i:2">aparece,</span></span></span>
+        <span class="ln" aria-hidden="true"><span class="w"><span style="--i:3">não</span></span> <span class="w"><span style="--i:4"><em>vende.</em></span></span></span>
+      </h1>
+      <p class="lead h-fade d2"><strong>Sou Álec Alves.</strong> Faço marcas aparecerem do jeito certo: a campanha que encontra as pessoas, o vídeo que segura a atenção e a página que fecha a conversa. Doze anos de digital. Antes disso, palco.</p>
+      <div class="cta-row h-fade d3">
+        <a class="btn btn-primary magnetic" href="#projetos">Ver projetos
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
-        <a class="btn btn-ghost" href="/assets/docs/Alec-Alves-Curriculo-Gestor-de-Trafego.pdf" download>Baixar currículo (PDF)</a>
+        <a class="btn btn-ghost magnetic" href="#contato">Vamos conversar</a>
       </div>
-      <div class="hero-links">
-        <a href="https://www.linkedin.com/in/alealvex/" target="_blank" rel="noopener me">LinkedIn</a>
-        <a href="https://www.instagram.com/oalecking/" target="_blank" rel="noopener me">Instagram @oalecking</a>
+      <div class="links h-fade d4">
+        <a href="/assets/docs/Alec-Alves-Curriculo-Gestor-de-Trafego.pdf" download>Currículo (PDF)</a>
         <a href="/assets/docs/Alec-Alves-Resume-Paid-Traffic-Manager.pdf" download>Resume in English</a>
+        <a href="https://www.linkedin.com/in/alealvex/" target="_blank" rel="noopener me">LinkedIn</a>
+        <a href="https://www.instagram.com/oalecking/" target="_blank" rel="noopener me">Instagram</a>
       </div>
     </div>
-
     <div class="stage">
-      <div class="arch">
-        <img src="/assets/img/alec-alves-retrato.webp" width="720" height="1279" alt="Álec Alves, gestor de tráfego pago, de braços cruzados em fundo escuro" fetchpriority="high" decoding="async">
+      <div class="arch" id="arch">
+        <img src="/assets/img/alec-alves-retrato.webp" width="720" height="1279" alt="Retrato de Álec Alves, de óculos e blusa escura, sob luz de estúdio" fetchpriority="high" decoding="async">
       </div>
-      <div class="chip c1 float"><b>&lt; R$ 3</b><span>por conversa em campanhas de direito</span></div>
-      <div class="chip c2 float"><b>20+</b><span>contas de anúncio geridas</span></div>
+      <div class="chip c1 float"><b>2014</b><span>primeiro site no ar, aos 14 anos</span></div>
+      <div class="chip c2 float"><b>palco</b><span>ator, diretor e palhaço antes do marketing</span></div>
     </div>
   </div>
+  <a class="scroll-cue mono" href="#numeros" aria-label="Rolar para o conteúdo"><i></i></a>
 </section>
 
 <div class="ticker" aria-hidden="true">
   <div class="ticker-track">
-    <span>Meta Ads</span><span>Google Ads</span><span>TikTok Ads</span><span>LinkedIn Ads</span><span>Google Analytics</span><span>Landing pages</span><span>WordPress</span><span>HTML · CSS · JS</span><span>SEO</span><span>CRM</span><span>Roteiro</span><span>Premiere</span><span>DaVinci Resolve</span><span>CapCut</span>
-    <span>Meta Ads</span><span>Google Ads</span><span>TikTok Ads</span><span>LinkedIn Ads</span><span>Google Analytics</span><span>Landing pages</span><span>WordPress</span><span>HTML · CSS · JS</span><span>SEO</span><span>CRM</span><span>Roteiro</span><span>Premiere</span><span>DaVinci Resolve</span><span>CapCut</span>
+    <span>Meta Ads</span><span>Google Ads</span><span>TikTok Ads</span><span>LinkedIn Ads</span><span>Google Analytics</span><span>Landing pages</span><span>WordPress</span><span>HTML · CSS · JS</span><span>SEO</span><span>Roteiro</span><span>Apresentação</span><span>Premiere</span><span>DaVinci Resolve</span><span>CapCut</span><span>Identidade de marca</span>
+    <span>Meta Ads</span><span>Google Ads</span><span>TikTok Ads</span><span>LinkedIn Ads</span><span>Google Analytics</span><span>Landing pages</span><span>WordPress</span><span>HTML · CSS · JS</span><span>SEO</span><span>Roteiro</span><span>Apresentação</span><span>Premiere</span><span>DaVinci Resolve</span><span>CapCut</span><span>Identidade de marca</span>
   </div>
 </div>
 
 <section class="sec" id="numeros">
   <div class="wrap">
-    <div class="sec-head rv">
-      <h2>Números que <em>pagam</em> o aluguel do cliente.</h2>
-      <p>Foco em lead que vira contrato, não em métrica de vaidade.</p>
+    <div class="sec-head">
+      <h2 class="split">Doze anos, <em>resumidos</em>.</h2>
+      <p class="rv">Um pouco do que já passou pelas minhas mãos.</p>
     </div>
     <div class="stats">
-      <div class="stat rv" style="--d:.0s"><div class="n" data-to="20" data-suffix="+">20<small>+</small></div><p>contas de anúncio geridas, de R$ 1.500 a R$ 50 mil por mês</p></div>
-      <div class="stat rv" style="--d:.08s"><div class="n" data-to="100" data-prefix="R$ " data-suffix=" mil+">R$ 100<small> mil+</small></div><p>por mês em investimento de mídia na carteira atual</p></div>
-      <div class="stat rv" style="--d:.16s"><div class="n" data-to="3" data-prefix="&lt; R$ ">&lt; R$ 3</div><p>por conversa em campanhas de direito previdenciário e bancário</p></div>
-      <div class="stat rv" style="--d:.24s"><div class="n" data-to="1" data-prefix="R$ " data-suffix=" mi+">R$ 1<small> mi+</small></div><p>em honorários trazidos a escritórios de advocacia pelas campanhas</p></div>
+      <div class="stat rv" style="--d:0s"><div class="n" data-to="2014" data-from="2000">2014</div><p>Primeiro site no ar. Eu tinha 14 anos.</p></div>
+      <div class="stat rv" style="--d:.08s"><div class="n" data-to="20" data-suffix="+">20<small>+</small></div><p>contas de anúncio geridas, de R$ 1,5 mil a R$ 50 mil por mês</p></div>
+      <div class="stat rv" style="--d:.16s"><div class="n" data-to="6">6</div><p>setores: educação, varejo, crédito, beleza, advocacia e imobiliário</p></div>
+      <div class="stat rv" style="--d:.24s"><div class="n" data-to="1" data-prefix="R$ " data-suffix=" mi+">R$ 1<small> mi+</small></div><p>em honorários que campanhas minhas trouxeram para escritórios de advocacia</p></div>
     </div>
-    <p class="mono note rv">Dados da carteira atual na Pixel Assessoria de Marketing, em novembro de 2026.</p>
   </div>
 </section>
 
-<section class="sec" id="ciclo" style="padding-top:0">
+<section class="sec" id="servicos" style="padding-top:0">
   <div class="wrap">
-    <div class="sec-head rv">
-      <h2>Da campanha ao <em>contrato</em> assinado.</h2>
-      <p>Três frentes que normalmente são três fornecedores. Aqui, uma pessoa só, e o anúncio, a página e o vídeo falam a mesma língua.</p>
+    <div class="sec-head">
+      <h2 class="split">Da campanha ao <em>contrato</em> assinado.</h2>
+      <p class="rv">Dá para contratar uma frente só. Mas o resultado chega mais rápido quando elas trabalham juntas.</p>
     </div>
     <div class="rows">
       <article class="row rv">
         <span class="idx">01</span>
-        <h3>Tráfego <em>pago</em></h3>
+        <h3>Tráfego pago</h3>
         <div>
-          <p>Estrutura de conta, público, oferta, criativo e otimização como um sistema só. Relatório semanal e reunião de resultados, com a conversa focada em lead qualificado e fechamento.</p>
-          <div class="tags"><span class="tag">Meta Ads</span><span class="tag">Google Ads</span><span class="tag">TikTok Ads</span><span class="tag">LinkedIn Ads</span><span class="tag">GA4</span></div>
+          <p>Campanhas no Meta Ads e no Google Ads pensadas para gerar conversa e venda. Cuido da estrutura da conta, do público, dos criativos e dos testes, e entrego um relatório que você entende sem tradutor.</p>
+          <div class="tags"><span class="tag">Meta Ads</span><span class="tag">Google Ads</span><span class="tag">TikTok Ads</span><span class="tag">Relatórios</span></div>
+          <a class="ask" target="_blank" rel="noopener" href="https://wa.me/5519999651791?text=Ol%C3%A1%2C%20%C3%81lec!%20Vi%20seu%20site%20e%20quero%20conversar%20sobre%20tr%C3%A1fego%20pago%20para%20a%20minha%20marca.">Quero anunciar melhor <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
         </div>
       </article>
       <article class="row rv">
         <span class="idx">02</span>
-        <h3>Páginas que <em>convertem</em></h3>
+        <h3>Sites e landing pages</h3>
         <div>
-          <p>A página que recebe o clique é parte da campanha. Landing pages e sites rápidos, com estrutura de conversão, SEO e medição desde o primeiro dia.</p>
-          <div class="tags"><span class="tag">Landing pages</span><span class="tag">WordPress</span><span class="tag">HTML · CSS · JS</span><span class="tag">SEO</span><span class="tag">Analytics</span></div>
+          <p>A página continua a conversa que o anúncio começou. Escrevo, desenho e coloco no ar páginas rápidas, com SEO e medição prontos desde o primeiro dia.</p>
+          <div class="tags"><span class="tag">Landing pages</span><span class="tag">Sites</span><span class="tag">WordPress</span><span class="tag">SEO</span></div>
+          <a class="ask" target="_blank" rel="noopener" href="https://wa.me/5519999651791?text=Ol%C3%A1%2C%20%C3%81lec!%20Vi%20seu%20site%20e%20quero%20conversar%20sobre%20um%20site%20ou%20landing%20page.">Quero uma página nova <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
         </div>
       </article>
       <article class="row rv">
         <span class="idx">03</span>
-        <h3>Vídeo com <em>rosto</em> e voz</h3>
+        <h3>Vídeo</h3>
         <div>
-          <p>Roteiro, gravação e edição. Vim do teatro, então o anúncio pode ter apresentador, ritmo e presença de verdade, não só legenda animada sobre banco de imagem.</p>
-          <div class="tags"><span class="tag">Roteiro</span><span class="tag">Apresentador</span><span class="tag">Premiere</span><span class="tag">DaVinci</span><span class="tag">CapCut</span></div>
+          <p>Roteiro, gravação e edição para anúncio e redes. Se a marca precisar de um rosto, eu apresento: anos de palco ajudam quando a câmera liga.</p>
+          <div class="tags"><span class="tag">Roteiro</span><span class="tag">Apresentação</span><span class="tag">Edição</span><span class="tag">Reels</span></div>
+          <a class="ask" target="_blank" rel="noopener" href="https://wa.me/5519999651791?text=Ol%C3%A1%2C%20%C3%81lec!%20Vi%20seu%20site%20e%20quero%20conversar%20sobre%20um%20v%C3%ADdeo.">Quero um vídeo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        </div>
+      </article>
+      <article class="row rv">
+        <span class="idx">04</span>
+        <h3>Marca</h3>
+        <div>
+          <p>Conceito, identidade visual e verbal, manual e materiais de lançamento. Para quem está começando ou precisa se apresentar de novo.</p>
+          <div class="tags"><span class="tag">Identidade visual</span><span class="tag">Tom de voz</span><span class="tag">Manual de marca</span></div>
+          <a class="ask" target="_blank" rel="noopener" href="https://wa.me/5519999651791?text=Ol%C3%A1%2C%20%C3%81lec!%20Vi%20seu%20site%20e%20quero%20conversar%20sobre%20a%20marca%20do%20meu%20neg%C3%B3cio.">Quero cuidar da minha marca <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
         </div>
       </article>
     </div>
   </div>
 </section>
 
-<section class="sec" id="trabalho" style="padding-top:0">
+<section class="sec" id="projetos" style="padding-top:0">
   <div class="wrap">
-    <div class="sec-head rv">
-      <h2>Trabalho <em>recente</em>.</h2>
-      <p>Projetos em que eu cuidei da estratégia e da execução. Nomes de clientes de advocacia ficam fora por sigilo.</p>
+    <div class="sec-head">
+      <h2 class="split">Projetos e seus <em>bastidores</em>.</h2>
+      <p class="rv">Clique em qualquer um para ver a história completa: o pedido, o que eu fiz e o que mudou.</p>
+    </div>
+    <div class="bento">
+      <button class="case wide rv" data-case="territorio" data-cursor="Abrir"><span class="media"><img src="/assets/img/projetos/territorio-capa.webp" width="1100" height="688" loading="lazy" decoding="async" alt="Capa da marca Território com vista aérea de Campinas"></span><span class="open" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span><span class="body"><span class="meta mono"><span>Território</span><span>Marca · 2026</span></span><span class="ttl">Uma marca do zero para quem faz o mercado imobiliário crescer</span></span></button>
+      <button class="case narrow rv" style="--d:.08s" data-case="advocacia" data-cursor="Abrir"><span class="media"><img src="/assets/img/projetos/advocacia-capa.webp" width="1100" height="688" loading="lazy" decoding="async" alt="Arte do case de Meta Ads para escritórios de advocacia"></span><span class="open" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span><span class="body"><span class="meta mono"><span>Advocacia</span><span>Meta Ads · atual</span></span><span class="ttl">Campanhas para escritórios de advocacia em todo o Brasil</span></span></button>
+      <button class="case narrow rv" data-case="arete" data-cursor="Abrir"><span class="media"><img src="/assets/img/projetos/arete-capa.webp" width="1100" height="688" loading="lazy" decoding="async" alt="Imagem 3D da marca Areté em dourado"></span><span class="open" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span><span class="body"><span class="meta mono"><span>Areté</span><span>Site · 2026</span></span><span class="ttl">Um site à altura de uma assessoria tributária séria</span></span></button>
+      <button class="case wide rv" style="--d:.08s" data-case="villagio" data-cursor="Abrir"><span class="media"><img src="/assets/img/projetos/villagio-capa.webp" width="1100" height="688" loading="lazy" decoding="async" alt="Topo da landing page do Villagio Entre Verdes"></span><span class="open" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span><span class="body"><span class="meta mono"><span>Villagio Entre Verdes</span><span>Landing page · 2026</span></span><span class="ttl">A página de lançamento de um condomínio de 20 casas</span></span></button>
+      <button class="case wide rv" data-case="yntour" data-cursor="Abrir"><span class="media"><img src="/assets/img/projetos/yntour-capa.webp" width="1100" height="688" loading="lazy" decoding="async" alt="Criativo da promoção de verão da YNTour com a escuna no mar"></span><span class="open" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span><span class="body"><span class="meta mono"><span>YNTour</span><span>Meta Ads · 2025</span></span><span class="ttl">Escuna cheia em dia de semana, sem queimar o preço</span></span></button>
+      <button class="case narrow rv" style="--d:.08s" data-case="bms" data-cursor="Abrir"><span class="media"><img src="/assets/img/projetos/bms-capa.webp" width="1100" height="688" loading="lazy" decoding="async" alt="Post da BMS Colchões com criança sentada na cama"></span><span class="open" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span><span class="body"><span class="meta mono"><span>BMS · Só Colchões</span><span>2024 — 2025</span></span><span class="ttl">Duas lojas de colchão de volta às redes</span></span></button>
     </div>
 
-    <div class="feat">
-      <article class="case rv">
-        <div class="meta mono"><span>Pixel Assessoria</span><span>2026 — atual</span></div>
-        <h3>Meta Ads para escritórios de advocacia em todo o Brasil</h3>
-        <p>Previdenciário, bancário, tributário e agronegócio. Roteiros e criativos dentro das regras de publicidade da OAB, com relatório semanal e reunião de resultados.</p>
-        <ul><li>Mais de R$ 1 milhão em honorários trazidos aos clientes</li><li>Menos de R$ 3 por conversa em nichos de direito</li><li>Promovido em set/2026 à carteira de maior ticket</li></ul>
-      </article>
-      <article class="case rv" style="--d:.08s">
-        <div class="meta mono"><span>Território</span><span>Nov 2026</span></div>
-        <h3>Marca de uma empresa de aquisição imobiliária, do zero</h3>
-        <p>Conceito, identidade visual e verbal, manual de marca, site de apresentação e roteiros para redes sociais, de Campinas e região.</p>
-        <ul><li>Direção de arte e narrativa de marca</li><li>Manual de identidade e site de apresentação</li><li>Roteiros de conteúdo para redes sociais</li></ul>
-      </article>
-      <article class="case rv" style="--d:.16s">
-        <div class="meta mono"><span>BMS · Só Colchões</span><span>2024 — 2025</span></div>
-        <h3>Tráfego, identidade e redes retomadas no varejo de colchões</h3>
-        <p>Meta Ads e Google Ads, nova identidade visual e reinício das contas sociais, que estavam paradas, para duas lojas de Sumaré e Americana.</p>
-        <ul><li>Vídeo e foto de produto, e peças gráficas</li><li>Apoio no design da landing page</li><li>Campanhas em Meta Ads e Google Ads</li></ul>
-      </article>
-    </div>
-
-    <h3 class="mono more-title rv">Mais projetos</h3>
-    <div class="logos">
-      <article class="logo-card rv"><img src="/assets/img/cliente-yntour.webp" width="560" height="560" loading="lazy" decoding="async" alt="Logo da YNTour"><div><strong>YNTour</strong><span>Meta Ads para gerar conversas qualificadas no WhatsApp. Salvador, BA.</span></div></article>
-      <article class="logo-card rv" style="--d:.06s"><img src="/assets/img/cliente-tetra-educacao.webp" width="560" height="560" loading="lazy" decoding="async" alt="Logo da Tetra Educação"><div><strong>Tetra Educação</strong><span>Edição de vídeo de apresentação de Power BI para tráfego pago.</span></div></article>
-      <article class="logo-card rv" style="--d:.12s"><img src="/assets/img/cliente-fas-group.webp" width="560" height="560" loading="lazy" decoding="async" alt="Logo da FAS Group"><div><strong>FAS Group</strong><span>Reels informativos sobre o IRPF, com edição e linguagem para redes.</span></div></article>
-      <article class="logo-card rv" style="--d:.18s"><img src="/assets/img/cliente-fisk.webp" width="560" height="560" loading="lazy" decoding="async" alt="Logo da Fisk"><div><strong>Fisk Itupeva</strong><span>Depoimento em vídeo com legendas bilíngues, português e inglês.</span></div></article>
-      <article class="logo-card rv" style="--d:.24s"><img src="/assets/img/cliente-estacio.webp" width="560" height="560" loading="lazy" decoding="async" alt="Logo da Estácio, polo Itupeva"><div><strong>Estácio Itupeva</strong><span>Social media estratégico: conteúdo e posicionamento digital do polo.</span></div></article>
+    <div class="minis-title"><h3 class="mono rv">Vídeos que editei, roteirizei ou apresentei</h3></div>
+    <div class="minis">
+      <button class="mini rv" data-case="fas" data-cursor="Assistir"><img src="/assets/img/projetos/fas-poster.webp" width="360" height="640" loading="lazy" decoding="async" alt="Álec Alves apresentando um Reels sobre o IRPF"><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4v16l13-8z"/></svg></span><span class="cap"><strong>FAS Group</strong><span>Reels sobre o IRPF, com roteiro e apresentação minha</span></span></button>
+      <button class="mini rv" style="--d:.06s" data-case="fisk" data-cursor="Assistir"><img src="/assets/img/projetos/fisk-poster.webp" width="540" height="954" loading="lazy" decoding="async" alt="Ex-aluna da Fisk dando depoimento em inglês"><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4v16l13-8z"/></svg></span><span class="cap"><strong>Fisk Itupeva</strong><span>Depoimento em inglês, com legenda nos dois idiomas</span></span></button>
+      <button class="mini rv" style="--d:.12s" data-case="tetra" data-cursor="Assistir"><img src="/assets/img/projetos/tetra-poster.webp" width="540" height="960" loading="lazy" decoding="async" alt="Apresentadora do anúncio do curso de Power BI da Tetra Educação"><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4v16l13-8z"/></svg></span><span class="cap"><strong>Tetra Educação</strong><span>Anúncio em vídeo do curso de Power BI</span></span></button>
+      <button class="mini rv" style="--d:.18s" data-case="estacio" data-cursor="Abrir"><img src="/assets/img/projetos/estacio-1.webp" width="900" height="1125" loading="lazy" decoding="async" alt="Perfil do Instagram da Estácio Itupeva em um celular"><span class="cap"><strong>Estácio Itupeva</strong><span>Redes sociais do polo: posts, stories e vídeos</span></span></button>
     </div>
   </div>
 </section>
 
 <section class="sec" id="trajetoria" style="padding-top:0">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <h2>Do <em>palco</em> ao gerenciador de anúncios.</h2>
-      <p>Mais de dez anos de digital, e uma formação que começou nas artes cênicas.</p>
+  <div class="wrap tl-wrap">
+    <div class="tl-side">
+      <span class="mono kicker rv">Trajetória</span>
+      <h2 class="split">Do <em>palco</em> ao gerenciador de anúncios.</h2>
+      <p class="rv">Mais de dez anos de digital, e uma formação que começou nas artes cênicas.</p>
     </div>
-    <ol class="tl">
-      <li class="rv"><time datetime="2026-11">Nov 2026</time><div><h3>Território — marca do zero</h3><p>Estratégia e direção de arte de uma empresa de aquisição imobiliária em Campinas.</p></div></li>
-      <li class="rv"><time datetime="2026-09">Set 2026</time><div><h3>Promovido à carteira All in One</h3><p>A de maior ticket da Pixel, com convite para treinar outros gestores.</p></div></li>
-      <li class="rv"><time datetime="2026-08">Ago 2026</time><div><h3>Art Suite concluído — SAGA</h3><p>Design digital, motion design, 3D e audiovisual.</p></div></li>
-      <li class="rv"><time datetime="2026-02">Fev 2026</time><div><h3>Gestor de Tráfego Pago — Pixel Assessoria de Marketing</h3><p>Meta Ads para escritórios de advocacia, em Campinas (SP), em regime híbrido.</p></div></li>
-      <li class="rv"><time datetime="2024-07">2024 — 2025</time><div><h3>Social media e tráfego pago — BMS Colchões, Só Colchões e Ateliê Buongiorno</h3><p>Meta Ads, Google Ads, planejamento de conteúdo e retomada de contas sociais.</p></div></li>
-      <li class="rv"><time datetime="2023">2023 — 2025</time><div><h3>Artes Cênicas e Produção Teatral</h3><p>Associação Cultural Revoar. Direção de vídeo, narrativa e presença diante da câmera.</p></div></li>
-      <li class="rv"><time datetime="2020">2020 — 2021</time><div><h3>Social media — R&amp;D Crédito Fácil</h3><p>Responsável sozinho pelas redes, da criação dos perfis à conquista de clientes, com tráfego orgânico e pago.</p></div></li>
-      <li class="rv"><time datetime="2015">2015 — 2016</time><div><h3>Design Gráfico — SAGA</h3><p>Base técnica de composição visual e linguagem.</p></div></li>
-      <li class="rv"><time datetime="2014">2014</time><div><h3>Começa no digital, aos 14 anos</h3><p>Sites, e-commerce e redes sociais, antes de isso virar profissão.</p></div></li>
-    </ol>
+    <div class="tl" id="tl">
+      <span class="tl-rail" aria-hidden="true"><span class="tl-fill" id="tlFill"><span class="tl-dot"></span></span></span>
+      <ol>
+      <li><time datetime="2026-11">Nov 2026</time><h3>Território, marca do zero</h3><p>Sócio e responsável pela marca de uma parceira de crescimento imobiliário em Campinas.</p></li>
+      <li><time datetime="2026-09">Set 2026</time><h3>Promovido à carteira All in One</h3><p>A de maior ticket da Pixel, com convite para treinar outros gestores.</p></li>
+      <li><time datetime="2026-08">Ago 2026</time><h3>Art Suite concluído, na SAGA</h3><p>Design digital, motion design, 3D e audiovisual.</p></li>
+      <li><time datetime="2026-02">Fev 2026</time><h3>Gestor de tráfego pago na Pixel Assessoria de Marketing</h3><p>Meta Ads para escritórios de advocacia de todo o Brasil.</p></li>
+      <li><time datetime="2024">2024 — 2025</time><h3>Redes e tráfego para varejo, educação e gastronomia</h3><p>BMS Colchões, Só Colchões, Ateliê Buongiorno, GWS3 e FAS Group.</p></li>
+      <li><time datetime="2023">2023 — 2025</time><h3>Artes Cênicas e Produção Teatral</h3><p>Associação Cultural Revoar. Direção, narrativa e presença diante do público.</p></li>
+      <li><time datetime="2020">2020 — 2021</time><h3>Social media na R&amp;D Crédito Fácil</h3><p>Sozinho nas redes, da criação dos perfis à conquista de clientes.</p></li>
+      <li><time datetime="2015">2015 — 2016</time><h3>Design Gráfico, na SAGA</h3><p>A base de composição e linguagem visual.</p></li>
+      <li><time datetime="2014">2014</time><h3>O primeiro site no ar</h3><p>Aos 14 anos: sites, lojas virtuais e redes sociais, antes de isso virar profissão.</p></li>
+      </ol>
+    </div>
   </div>
 </section>
 
 <section class="sec" id="sobre" style="padding-top:0">
   <div class="wrap about">
-    <figure class="rv"><img src="/assets/img/alec-alves-estudio-pb.webp" width="760" height="1142" loading="lazy" decoding="async" alt="Álec Alves sentado em estúdio fotográfico, em preto e branco"></figure>
+    <figure class="rv"><div class="ph"><img id="aboutImg" src="/assets/img/alec-alves-estudio-pb.webp" width="760" height="1142" loading="lazy" decoding="async" alt="Álec Alves sentado em estúdio fotográfico, em preto e branco"></div></figure>
     <div>
-      <p class="mono rv" style="margin-bottom:18px">Sobre</p>
-      <h2 class="rv">Cresci no palco. Hoje <em>construo</em> presença com dados.</h2>
-      <p class="rv">Fui ator, diretor e palhaço, com vivência em teatro e circo, antes de abrir o primeiro gerenciador de anúncios. Isso me ensinou o que importa em qualquer campanha: <strong>saber para quem se fala, e como se mostrar.</strong></p>
-      <p class="rv">Hoje cuido de campanhas de Meta Ads e Google Ads com um diferencial prático: <strong>faço a campanha, a página que recebe o visitante e o vídeo do anúncio.</strong> Menos ruído entre fornecedores, mais velocidade para testar e ajustar.</p>
+      <span class="mono kicker rv">Sobre</span>
+      <h2 class="split">Antes do marketing, teve <em>palco</em>.</h2>
+      <p class="rv">Fui ator, diretor e palhaço. No teatro e no circo você aprende rápido que ninguém te deve atenção: ou conquista a plateia nos primeiros segundos, ou perde. <strong>É a mesma regra de um anúncio no feed.</strong></p>
+      <p class="rv">Comecei no digital aos 14, montando sites e lojas virtuais. Passei por design, social media, vídeo e tráfego, em agência, em empresa e por conta própria. Hoje cuido de campanhas para escritórios de advocacia na Pixel e sigo atendendo marcas em projetos próprios.</p>
       <blockquote class="quote rv">Presença não se impõe, se constrói.</blockquote>
-      <p class="rv">Sou de Salvador (BA) e moro em Monte Mor (SP), na região de Campinas. Falo português nativo e inglês intermediário.</p>
-      <div class="edu rv"><span class="tag">Art Suite — SAGA</span><span class="tag">Artes Cênicas — Revoar</span><span class="tag">Design Gráfico — SAGA</span><span class="tag">WordPress e SEO — Curso em Vídeo</span><span class="tag">Google Analytics — Skillshop</span></div>
+      <p class="rv">Nasci em Salvador e moro em Monte Mor, perto de Campinas.</p>
+      <div class="edu rv"><span class="tag">Art Suite · SAGA</span><span class="tag">Artes Cênicas · Revoar</span><span class="tag">Design Gráfico · SAGA</span><span class="tag">WordPress e SEO</span><span class="tag">Google Analytics</span></div>
     </div>
   </div>
 </section>
 
-<section class="sec" id="faq" style="padding-top:0">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <h2>Perguntas <em>frequentes</em>.</h2>
-      <p>O que recrutadores e clientes mais perguntam.</p>
-    </div>
-    <div class="faq rv">
-      <details open><summary>Com quais plataformas de anúncio você trabalha?</summary><p>Meta Ads e Google Ads são o dia a dia. Também opero TikTok Ads e LinkedIn Ads. Já gerenciei mais de 20 contas de anúncio, de R$ 1.500 a R$ 50 mil por mês de investimento.</p></details>
-      <details><summary>Você atende escritórios de advocacia?</summary><p>Sim, é meu foco atual: direito previdenciário, bancário, tributário e do agronegócio. Os roteiros e criativos seguem as regras de publicidade da OAB, e o cliente recebe relatório semanal com reunião de resultados.</p></details>
-      <details><summary>Você também faz a landing page e o vídeo do anúncio?</summary><p>Faço. Crio landing pages em WordPress ou em HTML, CSS e JavaScript, com SEO e Google Analytics. No vídeo, escrevo o roteiro, gravo como apresentador e edito no Premiere, DaVinci Resolve ou CapCut.</p></details>
-      <details><summary>Onde você trabalha e quais idiomas fala?</summary><p>Moro em Monte Mor (SP), na região de Campinas, e trabalho de forma remota, híbrida ou presencial na região. Falo português nativo e inglês intermediário. Há também um <a href="/assets/docs/Alec-Alves-Resume-Paid-Traffic-Manager.pdf" download>resume em inglês</a>.</p></details>
-    </div>
-  </div>
-</section>
-
-<section class="sec" id="contato" style="padding-top:0">
+<section class="contact-sec" id="contato">
   <div class="wrap">
     <div class="contact rv">
-      <p class="mono" style="margin-bottom:22px">Contato</p>
-      <h2>Vamos conversar sobre o <em>seu</em> próximo resultado?</h2>
-      <p class="lead">Vaga, projeto ou só uma dúvida sobre campanha. Respondo pelo WhatsApp ou e-mail.</p>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="https://wa.me/5519999651791?text=Ol%C3%A1%2C%20%C3%81lec!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener">Chamar no WhatsApp
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
-        <a class="btn btn-ghost" href="/assets/docs/Alec-Alves-Curriculo-Gestor-de-Trafego.pdf" download>Baixar currículo (PDF)</a>
+      <svg class="mark logo-svg" viewBox="0 0 826 530" aria-hidden="true"><use href="#logo"/></svg>
+      <div>
+        <span class="mono kicker">Contato</span>
+        <h2>Tem um projeto ou uma <em>vaga</em>? Me conta.</h2>
+        <p class="sub">Respondo pelo WhatsApp ou por e-mail, normalmente no mesmo dia.</p>
       </div>
-      <div class="channels">
-        <a class="channel" href="mailto:alvesalec99@gmail.com"><span class="mono">E-mail</span><strong>alvesalec99@gmail.com</strong></a>
-        <a class="channel" href="https://www.linkedin.com/in/alealvex/" target="_blank" rel="noopener me"><span class="mono">LinkedIn</span><strong>/in/alealvex</strong></a>
-        <a class="channel" href="https://www.instagram.com/oalecking/" target="_blank" rel="noopener me"><span class="mono">Instagram</span><strong>@oalecking</strong></a>
+      <div>
+        <div class="switch" role="tablist" aria-label="Motivo do contato" data-v="projeto">
+          <span class="knob" aria-hidden="true"></span>
+          <button role="tab" aria-selected="true" aria-controls="p-projeto" id="t-projeto" data-v="projeto">Quero contratar</button>
+          <button role="tab" aria-selected="false" aria-controls="p-vaga" id="t-vaga" data-v="vaga" tabindex="-1">Tenho uma vaga</button>
+        </div>
+        <div class="panel on" id="p-projeto" role="tabpanel" aria-labelledby="t-projeto">
+          <p>Me conta o que você precisa. Eu respondo com um caminho, não com um pacote pronto.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary magnetic" target="_blank" rel="noopener" href="https://wa.me/5519999651791?text=Ol%C3%A1%2C%20%C3%81lec!%20Vi%20seu%20site%20e%20quero%20conversar%20sobre%20um%20projeto.">Chamar no WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+            <a class="btn btn-ghost magnetic" href="mailto:alvesalec99@gmail.com?subject=Projeto">Mandar e-mail</a>
+          </div>
+        </div>
+        <div class="panel" id="p-vaga" role="tabpanel" aria-labelledby="t-vaga" hidden>
+          <p>Currículo em português e em inglês, e LinkedIn com o histórico completo. Se fizer sentido, marcamos uma conversa.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary magnetic" href="/assets/docs/Alec-Alves-Curriculo-Gestor-de-Trafego.pdf" download>Baixar currículo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 4v12M6 11l6 6 6-6M5 20h14"/></svg></a>
+            <a class="btn btn-ghost magnetic" target="_blank" rel="noopener" href="https://wa.me/5519999651791?text=Ol%C3%A1%2C%20%C3%81lec!%20Vi%20seu%20site%20e%20tenho%20uma%20vaga%20que%20pode%20combinar%20com%20o%20seu%20perfil.">WhatsApp</a>
+          </div>
+        </div>
+        <div class="channels">
+          <a href="mailto:alvesalec99@gmail.com"><span class="mono">E-mail</span><strong>alvesalec99@gmail.com</strong></a>
+          <a href="https://www.linkedin.com/in/alealvex/" target="_blank" rel="noopener me"><span class="mono">LinkedIn</span><strong>/in/alealvex</strong></a>
+          <a href="https://www.instagram.com/oalecking/" target="_blank" rel="noopener me"><span class="mono">Instagram</span><strong>@oalecking</strong></a>
+        </div>
       </div>
     </div>
   </div>
@@ -511,65 +641,285 @@ footer{padding:36px 0 54px;border-top:1px solid var(--line)}
 
 <footer>
   <div class="wrap foot">
-    <span class="mono">© <span id="y">2026</span> Álec Alves · Monte Mor, SP</span>
-    <span class="mono">Gestor de tráfego pago · <b>Meta Ads · Google Ads · Sites · Vídeo</b></span>
+    <a class="brand" href="#inicio"><svg class="logo-svg" viewBox="0 0 826 530" aria-hidden="true"><use href="#logo"/></svg>Álec Alves</a>
+    <q>Presença não se impõe, se constrói.</q>
+    <span class="mono">© <span id="y">2026</span> · Monte Mor, SP</span>
   </div>
 </footer>
 
-<a class="wa" href="https://wa.me/5519999651791?text=Ol%C3%A1%2C%20%C3%81lec!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener" aria-label="Falar com Álec Alves no WhatsApp">
+<a class="wa" id="wa" href="https://wa.me/5519999651791?text=Ol%C3%A1%2C%20%C3%81lec!%20Vi%20seu%20site%20e%20quero%20conversar." target="_blank" rel="noopener" aria-label="Falar com Álec Alves no WhatsApp">
   <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6A12 12 0 0 0 12 24c6.6 0 12-5.4 12-12 0-3.2-1.2-6.2-3.5-8.5ZM12 22a10 10 0 0 1-5.1-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A10 10 0 1 1 22 12c0 5.5-4.5 10-10 10Zm5.5-7.5c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1l-1 1.2c-.2.2-.4.2-.7.1a8.2 8.2 0 0 1-4-3.5c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.5.7.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.3Z"/></svg>
 </a>
 
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="m-title" aria-hidden="true">
+  <div class="m-bar">
+    <span class="mono" id="m-count"></span>
+    <div class="m-nav">
+      <button class="m-btn" id="m-prev" aria-label="Projeto anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+      <button class="m-btn" id="m-next" aria-label="Próximo projeto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
+      <button class="m-btn" id="m-close" aria-label="Fechar projeto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+  </div>
+  <div class="m-in" id="m-in"></div>
+</div>
+
+<script>
+var CASES={
+territorio:{t:"Território",h:"Uma marca do zero para quem faz o mercado imobiliário crescer.",lede:"Sou um dos três sócios da Território e cuidei da marca inteira: do conceito ao último template de post.",facts:["Marca","Direção de arte","Campinas, SP","2026"],
+ media:[["img","territorio-1.webp",1600,1138,"Visão geral do brand kit da Território: cores, tipografia e modelos"],["img","territorio-2.webp",900,900,"Peça do catálogo: Base, estrutura comercial e funil"],["img","territorio-3.webp",900,900,"Peça do catálogo: Digital, site e presença digital"],["img","territorio-4.webp",900,1540,"Sistema de logos da Território em diferentes versões"],["img","territorio-5.webp",900,1125,"Modelo de capa de carrossel para o Instagram"]],
+ pedido:"A Território ajuda incorporadoras, loteadoras e imobiliárias a atrair e converter clientes. Não é imobiliária, nem construtora, nem portal, e a marca precisava deixar isso claro logo no primeiro contato.",
+ fiz:["Conceito, posicionamento e manifesto","Nome, símbolo e sistema de logos","Cores, tipografia e grafismos de curvas topográficas","Tom de voz, bios e textos de apresentação","Manual de marca publicado como site para os sócios","Templates de redes, catálogo do WhatsApp e capas"],
+ mudou:"A marca foi aprovada e está pronta para ir a público. Qualquer peça nova sai do mesmo kit, então os sócios produzem sem depender de mim a cada post. A assinatura resume o trabalho: estratégia para ocupar, estrutura para expandir."},
+advocacia:{t:"Advocacia",h:"Campanhas para escritórios de advocacia em todo o Brasil.",lede:"Na Pixel Assessoria de Marketing, cuido do Meta Ads de uma carteira de escritórios. Os nomes ficam de fora por sigilo.",facts:["Meta Ads","Roteiro e criativo","Relatórios","2026, atual"],
+ media:[["img","advocacia-1.webp",1600,1000,"Arte do case: lead que vira contrato, com os principais números"]],
+ pedido:"Escritórios de direito previdenciário, bancário, tributário e do agronegócio precisam de cliente novo todo mês. Só que a advocacia tem regra própria: a OAB limita o que pode ser dito num anúncio.",
+ fiz:["Estrutura e gestão das campanhas no Meta Ads","Roteiros e criativos dentro das regras da OAB","Relatório semanal e reunião de resultados com cada escritório","Acompanhamento do lead até o contrato","Treinamento de outros gestores da agência"],
+ mudou:"Mais de R$ 1 milhão em honorários trazidos aos escritórios e conversas abaixo de R$ 3 em nichos de direito. Em setembro de 2026, fui promovido para a carteira de maior ticket da agência."},
+arete:{t:"Areté",h:"Um site à altura de uma assessoria tributária séria.",lede:"Site institucional da Areté, assessoria empresarial e tributária que atende empresas em recuperação de créditos, planejamento e governança.",facts:["Site institucional","Direção de arte","Textos","2026"],
+ media:[["img","arete-1.webp",1600,900,"Imagem 3D do nome Areté em dourado sobre fundo escuro"],["img","arete-2.webp",1200,675,"Ilustração do método: analisar, personalizar, aplicar, resultar"],["img","arete-3.webp",1200,727,"Gráfico de crescimento em dourado usado na seção de resultados"],["img","arete-4.webp",1200,800,"Imagem da seção quem somos"]],
+ pedido:"A Areté tinha anos de resultado, mas nenhum site que mostrasse isso com a seriedade que o tema pede. Para um empresário, tributário é assunto de confiança: a página precisava transmitir isso antes de qualquer conversa.",
+ fiz:["Estrutura da página e textos de cada seção","Direção de arte em azul-noite e dourado","Imagens 3D criadas para o projeto","Desenvolvimento responsivo, com WhatsApp sempre à mão","Números de resultado em destaque logo no topo"],
+ mudou:"Um site que apresenta a Areté pelo que ela entrega: áreas de atuação claras, resultados em destaque e um caminho curto até a conversa com um especialista."},
+villagio:{t:"Villagio Entre Verdes",h:"A página de lançamento de um condomínio de 20 casas.",lede:"Landing page do Villagio Entre Verdes, condomínio de casas com três suítes e quintal privativo.",facts:["Landing page","Textos","Design e desenvolvimento","2026"],
+ media:[["img","villagio-1.webp",1524,716,"Topo da landing page: Villagio, viva a serenidade"],["img","villagio-2.webp",1524,716,"Seção de apresentação do condomínio"],["img","villagio-3.webp",1524,716,"Seção do empreendimento com foto da área gourmet"]],
+ pedido:"Um lançamento imobiliário precisava de uma página que apresentasse o produto com calma e sofisticação e levasse o interessado até a visita ao decorado.",
+ fiz:["Arquitetura da página: empreendimento, comodidades, localização, planta e galeria","Textos no tom do projeto: tranquilo, sem exagero","Design e desenvolvimento responsivo","Agendamento de visita e WhatsApp sempre à vista"],
+ mudou:"Uma página que mostra o produto, responde às dúvidas mais comuns antes de alguém precisar perguntar e leva o visitante direto para o agendamento."},
+yntour:{t:"YNTour",h:"Escuna cheia em dia de semana, sem queimar o preço.",lede:"Passeios de escuna em Salvador. Planejei e rodei a promoção de verão no Meta Ads.",facts:["Meta Ads","Oferta","Criativos","Salvador, BA","2025"],
+ media:[["video","yntour",540,960,"Vídeo de abertura do verão 2026 da YNTour","loop"],["img","yntour-1.webp",900,1125,"Criativo: R$ 200 de desconto no passeio de escuna"],["img","yntour-2.webp",900,1125,"Criativo: R$ 200 off nos passeios de escuna"]],
+ pedido:"A escuna lotava no fim de semana e ficava vazia de segunda a sexta. E desconto agressivo transformaria um passeio premium em passeio barato.",
+ fiz:["Oferta de verão: R$ 200 de desconto fixo, só em dias úteis","Criativos e textos dos anúncios","Campanha no Meta Ads levando direto para o WhatsApp","Calendário de conteúdo e posts do perfil","Vídeo de abertura do verão 2026"],
+ mudou:"Conversas qualificadas chegando no WhatsApp com orçamento pequeno, e uma promoção que dá para repetir a cada temporada sem desvalorizar o passeio."},
+bms:{t:"BMS · Só Colchões",h:"Duas lojas de colchão de volta às redes.",lede:"Lojas de Sumaré e Americana, no interior de São Paulo. Cuidei das redes, do tráfego e da produção de foto e vídeo.",facts:["Social media","Meta Ads e Google Ads","Foto e vídeo","2024 — 2025"],
+ media:[["video","bms",540,960,"Bastidores de fotografia de produto para a BMS Colchões"],["img","bms-1.webp",900,1125,"Post da BMS Colchões sobre colchão de espuma"],["img","bms-2.webp",900,1125,"Panfleto da Só Colchões Americana"]],
+ pedido:"As duas lojas estavam com as redes paradas havia meses e dependiam de quem passava na porta. Precisavam voltar a aparecer, com uma identidade que desse para reconhecer de longe.",
+ fiz:["Nova identidade visual para as redes","Retomada dos perfis com calendário de posts","Campanhas no Meta Ads e no Google Ads","Fotos e vídeos de produto","Apoio no design da landing page"],
+ mudou:"Perfis ativos de novo, com cara própria, e anúncios rodando nos dois canais para levar gente até a loja e até o WhatsApp."},
+fas:{t:"FAS Group",h:"O Imposto de Renda explicado em um minuto.",lede:"Reels para a FAS Group, contabilidade consultiva. A ideia, o roteiro, a apresentação e a edição foram meus.",facts:["Roteiro","Apresentação","Edição","2024"],
+ media:[["video","fas",360,640,"Reels: Álec Alves explica as mudanças no IRPF 2024"]],
+ pedido:"Época de declaração do Imposto de Renda, com a FAS anunciando o serviço de IRPF. O tema é técnico e cansativo, e a pessoa precisa entender rápido o que mudou.",
+ fiz:["Ideia e roteiro","Gravação e apresentação em frente à câmera","Edição com legendas, para quem assiste sem som","Chamada final para quem precisava de ajuda com a declaração"],
+ mudou:"Um conteúdo que explica e vende ao mesmo tempo, publicado no pico da procura pelo serviço e aprovado pelo dono da empresa antes de ir ao ar."},
+fisk:{t:"Fisk Itupeva",h:"Um depoimento em inglês que todo mundo entende.",lede:"Edição de depoimento para a escola de idiomas Fisk Itupeva, feita na agência GWS3.",facts:["Edição","Legendas bilíngues","2024"],
+ media:[["video","fisk",540,954,"Depoimento de ex-aluna da Fisk Itupeva, em inglês, com legendas"]],
+ pedido:"Uma ex-aluna aprovada no MET, exame internacional de inglês, gravou um depoimento no idioma. A escola queria usar nas redes sem perder quem ainda não fala inglês.",
+ fiz:["Edição e ritmo do depoimento","Legendas sincronizadas em inglês e em português","Formato vertical para Reels"],
+ mudou:"A prova de que o curso funciona, contada pela própria aluna, e entendida por qualquer pessoa que assista."},
+tetra:{t:"Tetra Educação",h:"Um curso de Power BI anunciado em menos de um minuto.",lede:"Edição de vídeo para anúncio do curso de Power BI da Tetra Educação.",facts:["Edição","Tráfego pago","2025"],
+ media:[["video","tetra",540,960,"Anúncio em vídeo do curso de Power BI da Tetra Educação"]],
+ pedido:"Anunciar um curso de Power BI para quem está rolando o feed sem procurar curso nenhum.",
+ fiz:["Edição completa a partir do material gravado","Cortes e ritmo para segurar os primeiros segundos","Legendas e destaques na tela","Formato pronto para Meta Ads"],
+ mudou:"Um criativo direto, que apresenta a oferta e chama para a ação antes de a pessoa pensar em pular."},
+estacio:{t:"Estácio Itupeva",h:"As redes de um polo de faculdade, em ordem.",lede:"Social media do polo Estácio de Itupeva, feito na agência GWS3. O tráfego pago ficou com outro profissional.",facts:["Social media","Vídeo","Design","2024"],
+ media:[["img","estacio-1.webp",900,1125,"Perfil do Instagram da Estácio Itupeva em um celular"]],
+ pedido:"O polo precisava de redes organizadas, dentro do padrão da marca nacional, que ajudassem a captar alunos na cidade.",
+ fiz:["Planejamento e calendário de conteúdo","Artes de feed e stories","Roteiro, gravação e edição de vídeos","Padronização visual do perfil"],
+ mudou:"Um perfil coerente com a marca Estácio e com a cara de Itupeva, publicado com constância."}
+};
+</script>
 <script>
 (function(){
-  var d=document,root=d.documentElement;
+  var d=document,root=d.documentElement,body=d.body;
   var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var fine=matchMedia('(hover:hover) and (pointer:fine)').matches;
   var y=d.getElementById('y'); if(y) y.textContent=new Date().getFullYear();
+  var WA='https://wa.me/5519999651791?text=';
 
-  /* header */
-  var top=d.getElementById('top');
-  function onScroll(){top.classList.toggle('stuck',scrollY>12)}
-  addEventListener('scroll',onScroll,{passive:true}); onScroll();
+  /* abertura com a logo (uma vez por sessão) */
+  var intro=d.getElementById('intro'),seen=false;
+  try{seen=sessionStorage.getItem('intro')==='1';sessionStorage.setItem('intro','1')}catch(e){}
+  function start(){root.classList.add('ready');body.classList.add('ready')}
+  if(reduce||seen){root.classList.add('no-intro');requestAnimationFrame(start)}
+  else{setTimeout(function(){intro.classList.add('done');start()},1650)}
 
-  /* menu mobile */
-  var burger=d.getElementById('burger'),menu=d.getElementById('menu');
-  function setMenu(o){burger.setAttribute('aria-expanded',o);burger.setAttribute('aria-label',o?'Fechar menu':'Abrir menu');menu.classList.toggle('open',o)}
-  burger.addEventListener('click',function(){setMenu(burger.getAttribute('aria-expanded')!=='true')});
-  menu.addEventListener('click',function(e){if(e.target.closest('a'))setMenu(false)});
-  addEventListener('keydown',function(e){if(e.key==='Escape')setMenu(false)});
+  /* separar palavras para revelar títulos */
+  [].forEach.call(d.querySelectorAll('.split'),function(el){
+    var i=0;
+    function walk(node){
+      [].slice.call(node.childNodes).forEach(function(n){
+        if(n.nodeType===3){
+          var frag=d.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function(t){
+            if(!t)return;
+            if(/^\s+$/.test(t)){frag.appendChild(d.createTextNode(t));return}
+            var w=d.createElement('span');w.className='w';var s=d.createElement('span');s.style.setProperty('--i',i++);s.textContent=t;w.appendChild(s);frag.appendChild(w);
+          });
+          node.replaceChild(frag,n);
+        }else if(n.nodeType===1&&n.tagName==='EM'){
+          var w=d.createElement('span');w.className='w';var s=d.createElement('span');s.style.setProperty('--i',i++);
+          n.parentNode.replaceChild(w,n);s.appendChild(n);w.appendChild(s);
+        }
+      });
+    }
+    el.setAttribute('aria-label',el.textContent.trim());
+    walk(el);
+  });
 
-  /* reveal */
-  var rv=[].slice.call(d.querySelectorAll('.rv'));
-  if(!('IntersectionObserver' in window)||reduce){rv.forEach(function(el){el.classList.add('in')})}
+  /* revelar ao rolar */
+  var obs=[].slice.call(d.querySelectorAll('.rv,.split'));
+  if(!('IntersectionObserver' in window)||reduce){obs.forEach(function(el){el.classList.add('in')})}
   else{
-    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -6% 0px'});
-    rv.forEach(function(el){io.observe(el)});
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.14,rootMargin:'0px 0px -6% 0px'});
+    obs.forEach(function(el){io.observe(el)});
   }
 
   /* contadores */
   function count(el){
-    var to=+el.dataset.to,pre=el.dataset.prefix||'',suf=el.dataset.suffix||'',t0=null,dur=1400;
-    var small=suf.trim()?('<small>'+suf+'</small>'):'';
-    function fmt(v){return pre.replace('<','&lt;')+Math.round(v)+small}
-    function step(t){if(!t0)t0=t;var p=Math.min((t-t0)/dur,1),e=1-Math.pow(1-p,4);el.innerHTML=fmt(to*e);if(p<1)requestAnimationFrame(step)}
+    var to=+el.dataset.to,from=+(el.dataset.from||0),pre=el.dataset.prefix||'',suf=el.dataset.suffix||'',t0=null,dur=1600;
+    var tail=suf?('<small>'+suf+'</small>'):'';
+    function step(t){if(!t0)t0=t;var p=Math.min((t-t0)/dur,1),e=1-Math.pow(1-p,4);el.innerHTML=pre+Math.round(from+(to-from)*e)+tail;if(p<1)requestAnimationFrame(step)}
     requestAnimationFrame(step);
   }
-  var nums=[].slice.call(d.querySelectorAll('.n[data-to]'));
   if('IntersectionObserver' in window&&!reduce){
     var io2=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){count(e.target);io2.unobserve(e.target)}})},{threshold:.6});
-    nums.forEach(function(n){io2.observe(n)});
+    [].forEach.call(d.querySelectorAll('.n[data-to]'),function(n){io2.observe(n)});
   }
 
-  /* holofote que segue o cursor (só desktop) */
-  var hero=d.querySelector('.hero');
-  if(hero&&!reduce&&matchMedia('(hover:hover) and (pointer:fine)').matches){
-    var st=d.querySelector('.stage');
-    hero.addEventListener('pointermove',function(e){
-      var r=st.getBoundingClientRect(),x=(e.clientX-(r.left+r.width/2))/r.width;
-      st.style.setProperty('--tilt',(x*5).toFixed(2));
-      st.firstElementChild.style.transform='rotate('+(x*1.2).toFixed(2)+'deg)';
+  /* header, progresso, botão do WhatsApp */
+  var top=d.getElementById('top'),prog=d.getElementById('progress'),wa=d.getElementById('wa'),contact=d.getElementById('contato'),lastY=0;
+  var tl=d.getElementById('tl'),fill=d.getElementById('tlFill'),items=tl?[].slice.call(tl.querySelectorAll('li')):[];
+  var aboutImg=d.getElementById('aboutImg');
+  var navLinks={},navIds=[];[].forEach.call(d.querySelectorAll('#menu a[href^="#"]:not(.btn)'),function(a){var id=a.getAttribute('href').slice(1);navLinks[id]=a;navIds.push(id)});
+  function onScroll(){
+    var sy=scrollY,h=root.scrollHeight-innerHeight;
+    top.classList.toggle('stuck',sy>12);
+    top.classList.toggle('hide',sy>lastY&&sy>500&&!menu.classList.contains('open'));
+    lastY=sy;
+    prog.style.transform='scaleX('+(h>0?sy/h:0)+')';
+    var cr=contact.getBoundingClientRect();wa.classList.toggle('off',cr.top<innerHeight*.6);
+    /* linha do tempo: a linha se enche e o ponto desce junto */
+    if(tl){
+      var r=tl.getBoundingClientRect(),mark=innerHeight*.55;
+      var hgt=Math.max(0,Math.min(r.height-16,mark-r.top));
+      fill.style.height=hgt+'px';
+      items.forEach(function(li){li.classList.toggle('lit',li.getBoundingClientRect().top+10<mark)});
+    }
+    var act=null;navIds.forEach(function(id){var el=d.getElementById(id);if(el&&el.getBoundingClientRect().top<innerHeight*.5)act=id});
+    navIds.forEach(function(id){navLinks[id].classList.toggle('on',id===act)});
+    if(aboutImg&&!reduce){var ar=aboutImg.getBoundingClientRect(),c=(ar.top+ar.height/2-innerHeight/2)/innerHeight;aboutImg.style.transform='scale(1.12) translateY('+(c*-6).toFixed(2)+'%)'}
+  }
+  var ticking=false;addEventListener('scroll',function(){if(!ticking){requestAnimationFrame(function(){onScroll();ticking=false});ticking=true}},{passive:true});
+
+  /* menu */
+  var burger=d.getElementById('burger'),menu=d.getElementById('menu');
+  function setMenu(o){burger.setAttribute('aria-expanded',o);burger.setAttribute('aria-label',o?'Fechar menu':'Abrir menu');menu.classList.toggle('open',o)}
+  burger.addEventListener('click',function(){setMenu(burger.getAttribute('aria-expanded')!=='true')});
+  menu.addEventListener('click',function(e){if(e.target.closest('a'))setMenu(false)});
+  onScroll();
+
+  /* holofote do topo e luz no retrato */
+  var hero=d.querySelector('.hero'),spot=d.querySelector('.spot'),arch=d.getElementById('arch');
+  if(fine&&!reduce){
+    var tx=72,ty=30,cx=72,cy=30;
+    hero.addEventListener('pointermove',function(e){var r=hero.getBoundingClientRect();tx=(e.clientX-r.left)/r.width*100;ty=(e.clientY-r.top)/r.height*100;
+      var a=arch.getBoundingClientRect();arch.style.setProperty('--ax',((e.clientX-a.left)/a.width*100)+'%');arch.style.setProperty('--ay',((e.clientY-a.top)/a.height*100)+'%')});
+    (function loop(){cx+=(tx-cx)*.08;cy+=(ty-cy)*.08;spot.style.setProperty('--sx',cx+'%');spot.style.setProperty('--sy',cy+'%');requestAnimationFrame(loop)})();
+  }
+
+  /* cursor */
+  if(fine&&!reduce){
+    var dot=d.querySelector('.cur'),ring=d.querySelector('.cur-ring'),lab=ring.firstElementChild,mx=-100,my=-100,rx=-100,ry=-100;
+    addEventListener('pointermove',function(e){mx=e.clientX;my=e.clientY;root.classList.add('has-cursor');dot.style.transform='translate('+mx+'px,'+my+'px)'},{passive:true});
+    d.addEventListener('pointerleave',function(){root.classList.remove('has-cursor')});
+    (function loop(){rx+=(mx-rx)*.18;ry+=(my-ry)*.18;ring.style.transform='translate('+rx+'px,'+ry+'px)';requestAnimationFrame(loop)})();
+    d.addEventListener('pointerover',function(e){
+      var c=e.target.closest('[data-cursor]'),h=e.target.closest('a,button,[role=tab]');
+      ring.classList.toggle('label',!!c);root.classList.toggle('cur-label',!!c);lab.textContent=c?c.getAttribute('data-cursor'):'';
+      ring.classList.toggle('hover',!c&&!!h);
     });
   }
+
+  /* botões magnéticos */
+  if(fine&&!reduce){
+    [].forEach.call(d.querySelectorAll('.magnetic'),function(b){
+      b.addEventListener('pointermove',function(e){var r=b.getBoundingClientRect();b.style.transform='translate('+((e.clientX-r.left-r.width/2)*.22)+'px,'+((e.clientY-r.top-r.height/2)*.3)+'px)'});
+      b.addEventListener('pointerleave',function(){b.style.transition='transform .6s cubic-bezier(.2,.7,.1,1)';b.style.transform='';setTimeout(function(){b.style.transition=''},600)});
+    });
+  }
+
+  /* contato: projeto ou vaga */
+  var sw=d.querySelector('.switch');
+  [].forEach.call(sw.querySelectorAll('button'),function(b){
+    b.addEventListener('click',function(){
+      var v=b.dataset.v;sw.dataset.v=v;
+      [].forEach.call(sw.querySelectorAll('button'),function(x){var on=x===b;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1});
+      [].forEach.call(d.querySelectorAll('.panel'),function(p){var on=p.id==='p-'+v;p.classList.toggle('on',on);p.hidden=!on});
+    });
+  });
+  sw.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='ArrowLeft'){var bs=sw.querySelectorAll('button'),n=sw.dataset.v==='projeto'?1:0;bs[n].click();bs[n].focus()}});
+
+  /* modal em tela cheia dos projetos */
+  var modal=d.getElementById('modal'),mIn=d.getElementById('m-in'),mCount=d.getElementById('m-count');
+  var order=[].map.call(d.querySelectorAll('[data-case]'),function(b){return b.dataset.case});
+  var cur=null,lastBtn=null;
+  var IMG='/assets/img/projetos/',VID='/assets/video/';
+  var arrow='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>';
+  function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;')}
+  function render(id){
+    var c=CASES[id],i=order.indexOf(id),nx=order[(i+1)%order.length];
+    var g=c.media.map(function(m){
+      if(m[0]==='img'){var wide=m[2]/m[3]>1.25;return '<figure class="'+(wide?'wide':'')+'"><img src="'+IMG+m[1]+'" width="'+m[2]+'" height="'+m[3]+'" alt="'+esc(m[4])+'" loading="lazy" decoding="async"></figure>'}
+      var loop=m[5]==='loop';
+      return '<figure><div class="vid'+(loop?' playing':'')+'"><video src="'+VID+m[1]+'.mp4" poster="'+IMG+m[1]+'-poster.webp" width="'+m[2]+'" height="'+m[3]+'" playsinline preload="none" '+(loop?'muted loop autoplay':'controls')+' aria-label="'+esc(m[4])+'"></video>'+(loop?'':'<button class="vplay" aria-label="Assistir: '+esc(m[4])+'"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4v16l13-8z"/></svg></span></button>')+'</div></figure>';
+    }).join('');
+    var solo=c.media.length===1&&c.media[0][3]>c.media[0][2];
+    var msg=encodeURIComponent('Olá, Álec! Vi o projeto '+c.t+' no seu site e quero algo parecido.');
+    mIn.innerHTML=
+      '<div class="m-head"><span class="mono">'+esc(c.t)+'</span><h2 id="m-title">'+esc(c.h)+'</h2><p class="lede">'+esc(c.lede)+'</p><div class="m-facts">'+c.facts.map(function(f){return '<span class="tag">'+esc(f)+'</span>'}).join('')+'</div></div>'+
+      (solo?'<div class="solo-wrap">':'')+
+      '<div><div class="gallery" tabindex="0" aria-label="Imagens do projeto">'+g+'</div>'+(c.media.length>1?'<p class="mono g-hint">Arraste para o lado para ver mais</p>':'')+'</div>'+
+      '<div class="m-cols"><div class="m-col"><h3>O pedido</h3><p>'+esc(c.pedido)+'</p></div><div class="m-col"><h3>O que eu fiz</h3><ul>'+c.fiz.map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ul></div><div class="m-col"><h3>O que mudou</h3><p>'+esc(c.mudou)+'</p></div></div>'+
+      (solo?'</div>':'')+
+      '<div class="m-foot"><a class="btn btn-primary" target="_blank" rel="noopener" href="'+WA+msg+'">Quero algo assim '+arrow+'</a><button class="m-next" data-go="'+nx+'"><span class="mono">Próximo projeto</span><strong>'+esc(CASES[nx].t)+' →</strong></button></div>';
+    mCount.textContent=String(i+1).padStart(2,'0')+' / '+String(order.length).padStart(2,'0');
+    [].forEach.call(mIn.querySelectorAll('.vid'),function(v){
+      var vid=v.querySelector('video'),btn=v.querySelector('.vplay');
+      if(btn)btn.addEventListener('click',function(){pauseAll(vid);vid.play();v.classList.add('playing')});
+      vid.addEventListener('play',function(){pauseAll(vid);v.classList.add('playing')});
+    });
+    mIn.querySelector('.m-next').addEventListener('click',function(){go(this.dataset.go)});
+    modal.scrollTop=0;
+  }
+  function pauseAll(except){[].forEach.call(d.querySelectorAll('#m-in video'),function(v){if(v!==except&&!v.loop)v.pause()})}
+  function clipFrom(el){var r=el.getBoundingClientRect();return 'inset('+r.top+'px '+(innerWidth-r.right)+'px '+(innerHeight-r.bottom)+'px '+r.left+'px round 20px)'}
+  function open(id,btn){
+    cur=id;lastBtn=btn||lastBtn;render(id);
+    modal.setAttribute('aria-hidden','false');modal.classList.add('open');body.classList.add('lock');
+    if(reduce||!btn){modal.style.clipPath='none';modal.classList.add('shown')}
+    else{
+      modal.classList.remove('anim');modal.style.clipPath=clipFrom(btn);modal.offsetWidth;
+      modal.classList.add('anim');modal.style.clipPath='inset(0px 0px 0px 0px round 0px)';
+      setTimeout(function(){modal.classList.add('shown')},280);
+    }
+    try{history.replaceState(null,'','#projeto-'+id)}catch(e){}
+    setTimeout(function(){d.getElementById('m-close').focus({preventScroll:true})},60);
+  }
+  function go(id){
+    modal.classList.remove('shown');
+    setTimeout(function(){cur=id;render(id);modal.classList.add('shown');try{history.replaceState(null,'','#projeto-'+id)}catch(e){}},reduce?0:220);
+  }
+  function close(){
+    if(!cur)return;pauseAll();
+    var target=d.querySelector('[data-case="'+cur+'"]');
+    modal.classList.remove('shown');
+    var done=function(){modal.classList.remove('open','anim');modal.setAttribute('aria-hidden','true');modal.style.clipPath='';body.classList.remove('lock');mIn.innerHTML='';if(target)target.focus({preventScroll:true})};
+    if(reduce||!target){done()}
+    else{modal.classList.add('anim');modal.style.clipPath=clipFrom(target);setTimeout(done,720)}
+    cur=null;
+    try{history.replaceState(null,'',location.pathname+'#projetos')}catch(e){}
+  }
+  [].forEach.call(d.querySelectorAll('[data-case]'),function(b){b.addEventListener('click',function(){open(b.dataset.case,b)})});
+  d.getElementById('m-close').addEventListener('click',close);
+  d.getElementById('m-prev').addEventListener('click',function(){var i=order.indexOf(cur);go(order[(i-1+order.length)%order.length])});
+  d.getElementById('m-next').addEventListener('click',function(){var i=order.indexOf(cur);go(order[(i+1)%order.length])});
+  addEventListener('keydown',function(e){
+    if(e.key==='Escape'){if(cur)close();else setMenu(false)}
+    if(!cur)return;
+    if(e.key==='ArrowRight'&&!e.target.closest('.gallery'))d.getElementById('m-next').click();
+    if(e.key==='ArrowLeft'&&!e.target.closest('.gallery'))d.getElementById('m-prev').click();
+    if(e.key==='Tab'){var f=modal.querySelectorAll('button,a[href],video[controls],[tabindex="0"]');if(!f.length)return;var a=f[0],z=f[f.length-1];if(e.shiftKey&&d.activeElement===a){e.preventDefault();z.focus()}else if(!e.shiftKey&&d.activeElement===z){e.preventDefault();a.focus()}}
+  });
+  var m=location.hash.match(/^#projeto-(\w+)/);if(m&&CASES[m[1]])setTimeout(function(){open(m[1])},400);
 })();
 </script>
 </body>
